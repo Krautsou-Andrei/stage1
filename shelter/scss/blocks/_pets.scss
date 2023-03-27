@@ -1,0 +1,115 @@
+.pets {
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+  background-color: $color-pets-background;
+}
+.pets__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: $weight-desctop;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3.75rem;
+}
+.pets__title {
+  text-align: center;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  column-gap: 5.625rem;
+}
+.button {
+}
+.button__slider {
+  position: absolute;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.button__slider.prev {
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.button__slider.next {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.button-prev {
+  width: 100%;
+  height: 100%;
+  border-radius: 6.25rem;
+  border: 2px solid $color-button-border;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/icon/arrow.svg");
+}
+.slider {
+}
+.slider__item {
+}
+.item {
+  padding-bottom: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.875rem;
+
+  border-radius: 0.5625rem;
+
+  background-color: $color-pets-item-background;
+}
+.item__slider-image {
+}
+.image-sourse {
+}
+.item__title {
+  color: $color-pets-title-text;
+}
+.title--lg {
+  @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+}
+.item__button {
+  width: 11.6875rem;
+  height: 3.25rem;
+}
+.button-item-pets {
+  width: 100%;
+  height: 100%;
+  border: 2px solid $color-button-border;
+}
+.button-next {
+  width: 100%;
+  height: 100%;
+  border-radius: 6.25rem;
+  border: 2px solid $color-button-border;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../../assets/icon/arrow.svg");
+  transform: rotate(180deg);
+}
+.pets__button {
+  // display: block;
+
+  width: 16.3125rem;
+  height: 3.25rem;
+}
+.button-pets {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-pets-button-pets-background;
+}
