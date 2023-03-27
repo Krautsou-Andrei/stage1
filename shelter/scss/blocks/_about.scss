@@ -1,0 +1,35 @@
+.about {
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+}
+
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+  column-gap: 6.8125rem;
+  align-items: flex-start;
+}
+
+.about__content {
+  max-width: 26.875rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5625rem;
+}
+
+.title-about {
+  max-width: 23.125rem;
+  color: $color-about-title-text;
+}
+
+.title--xl {
+  @include font($size: 2.1875rem, $height: 130%, $weight: 400, $letter: 0.06em);
+}
+
+.content__description {
+  @include font($size: 0.9375rem, $height: 160%, $weight: 400, $letter: normal);
+}
+
+.description--about {
+  color: $color-about-description-text;
+}

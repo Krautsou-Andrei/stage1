@@ -1,0 +1,67 @@
+.header {
+  @extend %linear-gradient-background-color-header;
+}
+
+.header__container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1.875rem;
+  max-width: $weight-desctop;
+  width: 100%;
+}
+
+.container {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-title {
+  margin-bottom: 0.625rem;
+  color: $color-logo-text;
+}
+
+.title--xxl {
+  @include font($size: 2rem, $height: 110%, $weight: 400, $letter: 0.06em);
+}
+
+.logo-subtitle {
+  font-family: "Arial";
+  color: $color-logo-subtitle;
+  @include font($size: 0.8125rem, $height: 115.4%, $weight: 400, $letter: 0.01em);
+}
+
+.menu {
+  font-family: "Arial";
+  color: $color-menu-link-text;
+  @include font($size: 0.9375rem, $height: 160%, $weight: 400, $letter: 0em);
+}
+
+.menu__list {
+  display: flex;
+  column-gap: 2.1875rem;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.menu__link:hover {
+  color: $color-menu-link-text-hover;
+  @extend %transition-all;
+}
+
+.menu__link:hover + .link-border {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.1875rem;
+
+  background-color: $color-menu-link-border;
+  @extend %transition-all;
+}

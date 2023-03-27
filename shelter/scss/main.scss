@@ -1,2 +1,10 @@
 @import "./base/fonts";
 @import "./base/normal";
+@import "./abstract/constants";
+@import "./abstract/placeholders";
+@import "./abstract/mixin";
+
+@import "./blocks/header";
+@import "./blocks/main-page";
+@import "./blocks/start-screen";
+@import "./blocks/about";
