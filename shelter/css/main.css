@@ -628,10 +628,6 @@ legend {
           align-items: flex-start;
 }
 
-.image-sourse {
-  mix-blend-mode: multiply;
-}
-
 .donation__content {
   max-width: 23.75rem;
 }
