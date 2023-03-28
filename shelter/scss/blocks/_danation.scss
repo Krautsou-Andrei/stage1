@@ -3,6 +3,7 @@
   padding-bottom: 6.25rem;
   background-color: $color-donation-background;
 }
+
 .donation__wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -14,15 +15,9 @@
   column-gap: 6.8125rem;
   align-items: flex-start;
 }
-.donation__image {
-}
-.image-sourse {
-  mix-blend-mode: multiply;
-}
+
 .donation__content {
   max-width: 23.75rem;
-}
-.content {
 }
 
 .content-donation {
@@ -30,14 +25,12 @@
   flex-direction: column;
   row-gap: 1.25rem;
 }
-.content__title {
-}
-.title--xl {
-}
+
 .sub-title {
   color: $color-donation-content-title-text;
   @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
 }
+
 .donation__credit-card {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
@@ -52,21 +45,16 @@
   border-radius: 0.5625rem;
   background-color: $color-donation-credit-card-background;
 }
+
 .credit-card {
   display: flex;
 }
-.credit-card__image {
-}
-.image-source {
-}
+
 .credit-card__number {
   color: $color-donation-content-credit-card-text;
   @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
 }
-.donation__credit-card {
-}
-.credit-card {
-}
+
 .donation__description {
   font-family: "arialitalic";
   font-style: "italic";
