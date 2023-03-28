@@ -7,6 +7,8 @@
 .pets__wrapper {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 
   max-width: $weight-desctop;
 
@@ -53,6 +55,7 @@
   border: 2px solid $color-button-border;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 0.875rem, 0.375rem;
   background-image: url("../../assets/icon/arrow.svg");
 }
 
@@ -94,6 +97,7 @@
   border: 2px solid $color-button-border;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 0.875rem, 0.375rem;
   background-image: url("../../assets/icon/arrow.svg");
   transform: rotate(180deg);
 }

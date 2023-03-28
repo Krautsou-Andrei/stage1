@@ -2,22 +2,20 @@
   padding-top: 5rem;
   padding-bottom: 6.25rem;
 }
-.help__content {
+
+.help__wrapper {
   padding-left: 5.3125rem;
   padding-right: 5.3125rem;
   margin-left: auto;
   margin-right: auto;
-
   max-width: $weight-desctop;
 }
+
 .help__title {
   margin-bottom: 3.65rem;
   text-align: center;
 }
-.title--xl {
-}
-.help__list {
-}
+
 .list {
   display: flex;
   column-gap: 7.5rem;
@@ -27,6 +25,7 @@
   align-items: center;
   flex-wrap: wrap;
 }
+
 .list__item {
   white-space: nowrap;
   height: 9.375rem;
@@ -45,30 +44,4 @@
 .item__text {
   color: $color-help-item-text;
   @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
-}
-.item__food {
-}
-.item__transportation {
-  // grid-area: transportation;
-}
-.item__toys {
-  // grid-area: toys;
-}
-.item__cups {
-  // grid-area: cups;
-}
-.item__shampoos {
-  // grid-area: shampoos;
-}
-.item__vitamins {
-  // grid-area: vitamins;
-}
-.item__medicines {
-  // grid-area: medicines;
-}
-.item__collars {
-  // grid-area: collars;
-}
-.item__sleeping-areas {
-  // grid-area: sleeping-areas;
 }
