@@ -605,14 +605,14 @@ legend {
 }
 
 .donation {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
   background-color: #f6f6f6;
 }
 
 .donation__wrapper {
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
   max-width: 80rem;
   display: -webkit-box;
   display: -ms-flexbox;
