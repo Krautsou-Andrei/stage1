@@ -1,0 +1,106 @@
+.main {
+}
+.main-pets {
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
+
+  background-color: $color-main-pets-background;
+}
+.main-pets__wrapper {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: $weight-desctop;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2.8125rem;
+}
+
+.list-pets {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2.5rem;
+  row-gap: 1.875rem;
+}
+
+.main-buttons-wrapper {
+}
+.main__pagination {
+}
+.pagination {
+  display: flex;
+  column-gap: 1.25rem;
+}
+.pagination__prev-prev,
+.pagination__prev,
+.pagination__view-page,
+.pagination__next,
+.pagination__next-next {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+.button {
+}
+.button-prev-prev,
+.button-prev,
+.button-next,
+.button-next-next {
+  border: 0.125rem solid $color-main-pets-pagination-border;
+}
+
+.button-prev-prev {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.6875rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-arrow-pagination.svg");
+
+  &:hover {
+    background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
+  }
+}
+.pagination__prev {
+}
+.button-prev {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.812523rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-pagination.svg");
+}
+.pagination__view-page {
+}
+.view-page {
+  background: $color-main-pets-pagination-view-background;
+}
+.pagination__next {
+}
+.button-next {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.812523rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-pagination.svg");
+}
+.pagination__next-next {
+}
+.button-next-next {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.6875rem, 1.4375rem;
+  transform: rotate(180deg);
+  background-image: url("../../assets/icon/arrow-arrow-pagination.svg");
+
+  // &:hover {
+  //   transform: rotate(180deg);
+  //   background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
+  // }
+}
+.button-next-next:hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.6875rem, 1.4375rem;
+  // transform: rotate(180deg);
+  background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
+}

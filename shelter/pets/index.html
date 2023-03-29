@@ -5,36 +5,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="shortcut icon" href="../assets/icon/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../css/main.css">
+  <title>Pets</title>
 </head>
 
 <body>
-  <header class="header header--pets">
-    <div class="header__container container">
-      <div class="header__logo">
-        <h1 class="logo-title title--xxl">Cozy House</h1>
-        <div class="logo-subtitle"></div>
-      </div>
-      <nav class="header__menu">
-        <div class="menu">
-          <ul class="menu__list">
-            <li class="menu__item"><a class="menu__link" href="">About the shelter</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Our pets</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Help the shelter</a></li>
-            <li class="menu__item"><a class="menu__link" href="">Contacts</a></li>
-          </ul>
+  <header class="header header-pets">
+    <div class="header__container container ">
+      <div class="header__wrapper">
+        <div class="header__logo">
+          <h1 class="logo-title title--xxl">Cozy House</h1>
+          <div class="logo-subtitle">Shelter for pets in Boston</div>
         </div>
-      </nav>
-
+        <nav class="header__menu">
+          <div class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"><a class="menu__link" href="">About the shelter</a>
+                <span class="link-border"></span>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="">Our pets</a>
+                <span class="link-border"></span>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="">Help the shelter</a>
+                <span class="link-border"></span>
+              </li>
+              <li class="menu__item"><a class="menu__link" href="">Contacts</a>
+                <span class="link-border"></span>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
 
     </div>
   </header>
-  <main class="main main--pets">
-    <div class="main__wrapper">
-      <h2 class="main__title title--xl">Our friends who
+  <main class="main main-pets">
+    <div class="main-pets__wrapper">
+      <h2 class="main-pets__title main__title title--xl">Our friends who
         are looking for a house</h2>
-      <ul class="main__list list">
-        <li class="list__item">
+      <ul class="main-pets__list list-pets">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-katrine.jpg" alt="pets katrine" width="270" height="270">
           </div>
@@ -43,7 +54,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-jennifer.jpg" alt="pets jennifer" width="270" height="270">
           </div>
@@ -52,7 +63,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-woody.jpg" alt="pets woody" width="270" height="270">
           </div>
@@ -61,7 +72,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-sophia.jpg" alt="petssophia" width="270" height="270">
           </div>
@@ -70,7 +81,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-timmy.jpg" alt="petstimmy" width="270" height="270">
           </div>
@@ -79,7 +90,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-charly.jpg" alt="pets charly" width="270" height="270">
           </div>
@@ -88,7 +99,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-scarlet.jpg" alt="pets scarlet" width="270" height="270">
           </div>
@@ -97,7 +108,7 @@
             <button class="button button-item-pets" type="button">Learn more</button>
           </div>
         </li>
-        <li class="list__item">
+        <li class="list-pets__item item">
           <div class="item__slider-image">
             <img class="image-sourse" src="../assets/image/pets-freddie.jpg" alt="pets freddie" width="270" height="270">
           </div>
@@ -109,12 +120,27 @@
 
       </ul>
       <div class="main-buttons-wrapper">
-        <div class="main__button">
-          <button class="button button__prev-prev" type="button"></button>
-          <button class="button button__prev-prev" type="button"></button>
-          <div class="button view-page">1</div>
-          <button class="button button__prev-prev" type="button"></button>
-          <button class="button button__prev-prev" type="button"></button>
+        <div class="main__pagination pagination">
+          <div class="pagination__prev-prev">
+            <button class="button button-prev-prev" type="button"></button>
+          </div>
+          <div class="pagination__prev">
+            <button class="button button-prev" type="button"></button>
+          </div>
+          <div class="pagination__view-page">
+            <div class="button view-page">
+              <div>1</div>
+            </div>
+          </div>
+          <div class="pagination__next">
+            <button class="button button-next" type="button"></button>
+          </div>
+          <div class="pagination__next-next">
+            <button class="button button-next-next" type="button"></button>
+          </div>
+
+
+
         </div>
       </div>
     </div>
@@ -122,20 +148,44 @@
   </main>
   <footer class="footer">
     <section class="footer__wrapper">
-      <ul class="footer__list list">
-        <li class="list__item item">
-          <h2 class="item__title title--xl">For questions and suggestions</h2>
-          <div class="item__email"><a class="email" href="mailto:email@shelter.com">email@shelter.com</a></div>
-          <div class="item__phone"><a class="phone" href="tel:+136745677554">+13 674 567 75 54</a></div>
+      <ul class="footer__list list-footer layout-3-column">
+        <li class="list-footer__item item-footer">
+          <h2 class="item-footer__title title--xl title--footer">For questions and suggestions</h2>
+          <div class="item-footer__description">
+            <a class="email" href="mailto:email@shelter.com">
+              <span class="item-footer__image">
+                <img class="image-source" src="../assets/icon/icon-email.svg" alt="">
+              </span>
+              <span class="item-footer__text">email@shelter.com</span> </a>
+          </div>
+          <div class="item-footer__description">
+            <a class="phone" href="tel:+136745677554">
+              <span class="item-footer__image">
+                <img class="image-source" src="../assets/icon/icon-phone.svg" alt="">
+              </span>
+              <span class="item-footer__text">+13 674 567 75 54</span>
+
+            </a>
+          </div>
         </li>
-        <li class="list__item item">
-          <h2 class="item__title title--xl">For questions and suggestions</h2>
-          <div class="item__email"><a class="email" href="mailto:email@shelter.com">email@shelter.com</a></div>
-          <div class="item__phone"><a class="phone" href="tel:+136745677554">+13 674 567 75 54</a></div>
+        <li class="list-footer__item item-footer item-footer--center">
+          <h2 class="item-footer__title title--xl title--footer">We are waiting for your visit</h2>
+          <div class="item-footer__description">
+            <span class="item-footer__image">
+              <img class="image-source" src="../assets/icon/icon-marker.svg" alt="">
+            </span>
+            <span class="item-footer__text">1 Central Street, Boston (entrance from the store) </span>
+          </div>
+          <div class="item-footer__description">
+            <span class="item-footer__image">
+              <img class="image-source" src="../assets/icon/icon-marker.svg" alt="">
+            </span>
+            <span class="item-footer__text">18 South Park, London </span>
+          </div>
         </li>
-        <li class="list__item item">
-          <div class="item__footer-image">
-            <img class="image-sourse" src="./assets/image/footer-puppy.jpg" alt="footer image" width="300" height="310">
+        <li class="item-footer__description item-footer__description-image">
+          <div class="item-footer-image__footer-image">
+            <img class="image-sourse" src="../assets/image/footer-puppy.png" alt="footer image" width="300" height="310">
           </div>
         </li>
       </ul>

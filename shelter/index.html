@@ -57,8 +57,7 @@
     </div>
   </header>
   <main class="main">
-    <div class="main__container ">
-
+    <div class="main__wrapper">
       <section class="about">
         <div class="about__wrapper">
           <div class="about__image">
@@ -94,23 +93,24 @@
                   <button class="button button-item-pets" type="button">Learn more</button>
                 </div>
               </div>
-            </div>
-            <div class="slider__item item">
-              <div class="item__slider-image">
-                <img class="image-sourse" src="./assets/image/pets-jennifer.jpg" alt="pets jennifer" width="270" height="270">
+
+              <div class="slider__item item">
+                <div class="item__slider-image">
+                  <img class="image-sourse" src="./assets/image/pets-jennifer.jpg" alt="pets jennifer" width="270" height="270">
+                </div>
+                <h3 class="item__title title--lg">Jennifer</h3>
+                <div class="item__button">
+                  <button class="button button-item-pets" type="button">Learn more</button>
+                </div>
               </div>
-              <h3 class="item__title title--lg">Jennifer</h3>
-              <div class="item__button">
-                <button class="button button-item-pets" type="button">Learn more</button>
-              </div>
-            </div>
-            <div class="slider__item item">
-              <div class="item__slider-image">
-                <img class="image-sourse" src="./assets/image/pets-woody.jpg" alt="pets woody" width="270" height="270">
-              </div>
-              <h3 class="item__title title--lg">Woody</h3>
-              <div class="item__button">
-                <button class="button button-item-pets" type="button">Learn more</button>
+              <div class="slider__item item">
+                <div class="item__slider-image">
+                  <img class="image-sourse" src="./assets/image/pets-woody.jpg" alt="pets woody" width="270" height="270">
+                </div>
+                <h3 class="item__title title--lg">Woody</h3>
+                <div class="item__button">
+                  <button class="button button-item-pets" type="button">Learn more</button>
+                </div>
               </div>
             </div>
             <div class="button__slider next">
@@ -192,20 +192,44 @@
   </main>
   <footer class="footer">
     <section class="footer__wrapper">
-      <ul class="footer__list list">
-        <li class="list__item item">
-          <h2 class="item__title title--xl">For questions and suggestions</h2>
-          <div class="item__email"><a class="email" href="mailto:email@shelter.com">email@shelter.com</a></div>
-          <div class="item__phone"><a class="phone" href="tel:+136745677554">+13 674 567 75 54</a></div>
+      <ul class="footer__list list-footer layout-3-column">
+        <li class="list-footer__item item-footer">
+          <h2 class="item-footer__title title--xl title--footer">For questions and suggestions</h2>
+          <div class="item-footer__description">
+            <a class="email" href="mailto:email@shelter.com">
+              <span class="item-footer__image">
+                <img class="image-source" src="./assets/icon/icon-email.svg" alt="">
+              </span>
+              <span class="item-footer__text">email@shelter.com</span> </a>
+          </div>
+          <div class="item-footer__description">
+            <a class="phone" href="tel:+136745677554">
+              <span class="item-footer__image">
+                <img class="image-source" src="./assets/icon/icon-phone.svg" alt="">
+              </span>
+              <span class="item-footer__text">+13 674 567 75 54</span>
+
+            </a>
+          </div>
         </li>
-        <li class="list__item item">
-          <h2 class="item__title title--xl">For questions and suggestions</h2>
-          <div class="item__email"><a class="email" href="mailto:email@shelter.com">email@shelter.com</a></div>
-          <div class="item__phone"><a class="phone" href="tel:+136745677554">+13 674 567 75 54</a></div>
+        <li class="list-footer__item item-footer item-footer--center">
+          <h2 class="item-footer__title title--xl title--footer">We are waiting for your visit</h2>
+          <div class="item-footer__description">
+            <span class="item-footer__image">
+              <img class="image-source" src="./assets/icon/icon-marker.svg" alt="">
+            </span>
+            <span class="item-footer__text">1 Central Street, Boston (entrance from the store) </span>
+          </div>
+          <div class="item-footer__description">
+            <span class="item-footer__image">
+              <img class="image-source" src="./assets/icon/icon-marker.svg" alt="">
+            </span>
+            <span class="item-footer__text">18 South Park, London </span>
+          </div>
         </li>
-        <li class="list__item item">
-          <div class="item__footer-image">
-            <img class="image-sourse" src="./assets/image/footer-puppy.jpg" alt="footer image" width="300" height="310">
+        <li class="item-footer__description item-footer__description-image">
+          <div class="item-footer-image__footer-image">
+            <img class="image-sourse" src="./assets/image/footer-puppy.png" alt="footer image" width="300" height="310">
           </div>
         </li>
       </ul>

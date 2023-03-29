@@ -1,0 +1,56 @@
+.footer {
+  @extend %linear-gradient-background-color-footer;
+}
+
+.footer__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 2.5rem;
+  padding-left: 2.5rem;
+
+  max-width: $weight-desctop;
+}
+
+.list-footer {
+  padding-top: 2.5rem;
+}
+
+.list-footer__item {
+  max-width: 17.5rem;
+  margin-top: 1rem;
+  margin-bottom: 3.75rem;
+}
+
+.title--footer {
+  color: $color-footer-title-text;
+}
+
+.item-footer {
+  min-height: 14.625rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-footer--center {
+  min-width: 18.875rem;
+}
+
+.email,
+.phone,
+.item-footer__description {
+  display: flex;
+  column-gap: 1.25rem;
+  align-items: center;
+}
+
+.item-footer__image {
+  display: block;
+  min-width: 1.375rem;
+}
+
+.item-footer__text {
+  color: $color-footer-description-text;
+  @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+}
