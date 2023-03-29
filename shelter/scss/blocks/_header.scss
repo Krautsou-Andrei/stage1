@@ -24,6 +24,7 @@
 .logo-title {
   margin-bottom: 0.625rem;
   color: $color-logo-text;
+  // cursor: pointer;
 }
 
 .title--xxl {
@@ -56,7 +57,7 @@
   @extend %transition-all;
 }
 
-.menu__link:hover + .link-border {
+.menu__link:active + .link-border {
   display: block;
   position: absolute;
   width: 100%;
