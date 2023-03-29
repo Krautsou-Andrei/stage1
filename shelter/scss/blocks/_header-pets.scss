@@ -1,0 +1,24 @@
+.header-pets {
+  padding-bottom: 1.875rem;
+  background: $color-header-pets-background;
+}
+
+.header-pets .logo-title {
+  color: $color-header-pets-logo-text;
+}
+
+.header-pets .logo-subtitle {
+  color: $color-header-pets-logo-subtitle;
+}
+
+.header-pets .menu {
+  color: $color-header-pets-menu-link;
+}
+
+.header-pets .menu__link:hover {
+  color: $color-header-pets-menu-link-hover;
+}
+
+.header-pets .menu__link:hover + .link-border {
+  color: $color-header-pets-menu-link-border;
+}

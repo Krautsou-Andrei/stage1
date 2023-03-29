@@ -1,0 +1,16 @@
+.layout-3-column {
+  display: flex;
+  justify-content: space-between;
+  // grid-template-columns: repeat(auto-fill, 190px);
+  // row-gap: 24px;
+  // column-gap: 21px;
+
+  // @include mixin.media-tablet {
+  //   row-gap: 32px;
+  //   column-gap: 34px;
+  // }
+  // @include mixin.media-mobile {
+  //   row-gap: 16px;
+  //   grid-template-columns: repeat(auto-fill, 288px);
+  // }
+}

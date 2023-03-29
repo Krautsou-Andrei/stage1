@@ -3,6 +3,7 @@
 @import "./abstract/constants";
 @import "./abstract/placeholders";
 @import "./abstract/mixin";
+@import "./base/layout";
 
 @import "./blocks/header";
 @import "./blocks/main-page";
@@ -11,3 +12,7 @@
 @import "./blocks/pets";
 @import "./blocks/help";
 @import "./blocks/danation";
+@import "./blocks/footer";
+
+@import "./blocks/header-pets";
+@import "./blocks/main-pets";
