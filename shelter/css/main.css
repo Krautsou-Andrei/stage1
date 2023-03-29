@@ -863,10 +863,10 @@ legend {
   height: 3.25rem;
 }
 
-.button-prev-prev,
-.button-prev,
-.button-next,
-.button-next-next {
+.main-pets .button-prev-prev,
+.main-pets .button-prev,
+.main-pets .button-next,
+.main-pets .button-next-next {
   border: 0.125rem solid #cdcdcd;
 }
 
@@ -880,7 +880,7 @@ legend {
   background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
 }
 
-.button-prev {
+.main-pets .button-prev {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
@@ -891,7 +891,7 @@ legend {
   background: #f1cdb3;
 }
 
-.button-next {
+.main-pets .button-next {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
