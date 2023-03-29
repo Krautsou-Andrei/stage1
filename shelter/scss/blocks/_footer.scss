@@ -2,10 +2,17 @@
   @extend %linear-gradient-background-color-footer;
 }
 
-.list-footer {
-  padding-top: 2.5rem;
+.footer__wrapper {
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
+
+  max-width: $weight-desctop;
+}
+
+.list-footer {
+  padding-top: 2.5rem;
 }
 
 .list-footer__item {

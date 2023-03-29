@@ -306,6 +306,8 @@ legend {
 }
 
 .button {
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,10 +715,16 @@ legend {
   letter-spacing: 0.06em;
 }
 
-.list-footer {
-  padding-top: 2.5rem;
+.footer__wrapper {
+  margin-left: auto;
+  margin-right: auto;
   padding-right: 2.5rem;
   padding-left: 2.5rem;
+  max-width: 80rem;
+}
+
+.list-footer {
+  padding-top: 2.5rem;
 }
 
 .list-footer__item {
@@ -801,11 +809,17 @@ legend {
 }
 
 .main-pets {
-  padding: 5rem 2.5rem 6.25rem 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 6.25rem;
   background-color: #f6f6f6;
 }
 
 .main-pets__wrapper {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,4 +843,73 @@ legend {
      -moz-column-gap: 2.5rem;
           column-gap: 2.5rem;
   row-gap: 1.875rem;
+}
+
+.pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+}
+
+.pagination__prev-prev,
+.pagination__prev,
+.pagination__view-page,
+.pagination__next,
+.pagination__next-next {
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.button-prev-prev,
+.button-prev,
+.button-next,
+.button-next-next {
+  border: 0.125rem solid #cdcdcd;
+}
+
+.button-prev-prev {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.6875rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-arrow-pagination.svg");
+}
+.button-prev-prev:hover {
+  background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
+}
+
+.button-prev {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.812523rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-pagination.svg");
+}
+
+.view-page {
+  background: #f1cdb3;
+}
+
+.button-next {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.812523rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-pagination.svg");
+}
+
+.button-next-next {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.6875rem, 1.4375rem;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url("../../assets/icon/arrow-arrow-pagination.svg");
+}
+
+.button-next-next:hover {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 1.6875rem, 1.4375rem;
+  background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
 }
