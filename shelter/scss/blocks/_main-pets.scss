@@ -45,10 +45,10 @@
 }
 .button {
 }
-.button-prev-prev,
-.button-prev,
-.button-next,
-.button-next-next {
+.main-pets .button-prev-prev,
+.main-pets .button-prev,
+.main-pets .button-next,
+.main-pets .button-next-next {
   border: 0.125rem solid $color-main-pets-pagination-border;
 }
 
@@ -64,7 +64,7 @@
 }
 .pagination__prev {
 }
-.button-prev {
+.main-pets .button-prev {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
@@ -77,7 +77,7 @@
 }
 .pagination__next {
 }
-.button-next {
+.main-pets .button-next {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
