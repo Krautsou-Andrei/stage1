@@ -56,10 +56,10 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.6875rem, 1.4375rem;
-  background-image: url("../../assets/icon/arrow-arrow-pagination.svg");
+  background-image: url("../assets/icon/arrow-arrow-pagination.svg");
 
   &:hover {
-    background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
+    background-image: url("../assets/icon/arrow-arrow-pagination-active.svg");
   }
 }
 .pagination__prev {
@@ -68,7 +68,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
-  background-image: url("../../assets/icon/arrow-pagination.svg");
+  background-image: url("../assets/icon/arrow-pagination.svg");
 }
 .pagination__view-page {
 }
@@ -81,7 +81,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
-  background-image: url("../../assets/icon/arrow-pagination.svg");
+  background-image: url("../assets/icon/arrow-pagination.svg");
 }
 .pagination__next-next {
 }
@@ -90,17 +90,12 @@
   background-repeat: no-repeat;
   background-size: 1.6875rem, 1.4375rem;
   transform: rotate(180deg);
-  background-image: url("../../assets/icon/arrow-arrow-pagination.svg");
-
-  // &:hover {
-  //   transform: rotate(180deg);
-  //   background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
-  // }
+  background-image: url("../assets/icon/arrow-arrow-pagination.svg");
 }
 .button-next-next:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.6875rem, 1.4375rem;
-  // transform: rotate(180deg);
-  background-image: url("../../assets/icon/arrow-arrow-pagination-active.svg");
+
+  background-image: url("../assets/icon/arrow-arrow-pagination-active.svg");
 }
