@@ -23,6 +23,12 @@
   }
 }
 
+@mixin media-tablet-midle-pets {
+  @media (max-width: $weight-tablet-midle-pets) {
+    @content;
+  }
+}
+
 @mixin media-tablet-burger {
   @media (max-width: $weight-tablet-burger) {
     @content;
