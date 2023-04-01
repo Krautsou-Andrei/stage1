@@ -233,6 +233,11 @@ legend {
   letter-spacing: 0.06em;
 }
 
+.button:active {
+  -webkit-transform: translateY(0.125rem);
+          transform: translateY(0.125rem);
+}
+
 .button:hover {
   background-color: #fddcc4;
   cursor: pointer;
@@ -327,7 +332,7 @@ legend {
 .main-pets .button-next:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  background-image: url("./assets/icon/arrow-pagination-active.svg");
+  background-image: url("../assets/icon/arrow-pagination-active.svg");
 }
 
 .button-next-next {
@@ -358,6 +363,18 @@ legend {
       -ms-flex-align: center;
           align-items: center;
   background-color: #f1cdb3;
+}
+
+.main-pets .button-prev-prev:active,
+.main-pets .button-prev:active {
+  -webkit-transform: translateY(0.125rem) rotate(180deg);
+          transform: translateY(0.125rem) rotate(180deg);
+}
+
+.main-pets .button-next:active,
+.main-pets .button-next-next:active {
+  -webkit-transform: translateY(0.125rem);
+          transform: translateY(0.125rem);
 }
 
 .header__container {
