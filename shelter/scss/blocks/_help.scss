@@ -1,6 +1,14 @@
 .help {
   padding-top: 5rem;
   padding-bottom: 6.25rem;
+
+  @include media-tablet {
+  }
+
+  @include media-tablet-midle {
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+  }
 }
 
 .help__wrapper {
@@ -13,17 +21,26 @@
     padding-left: 2.4375rem;
     padding-right: 2.4375rem;
   }
+
+  @include mendia-tablet-midle-help {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
 }
 
 .help__title {
   margin-bottom: 3.65rem;
   text-align: center;
+
+  @include media-tablet-midle {
+    margin-bottom: 2.625rem;
+  }
 }
 
 .list {
   display: flex;
   column-gap: 7.5rem;
-  row-gap: 1rem;
+  row-gap: 3.4375rem;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -31,13 +48,21 @@
 
   @include media-tablet {
     column-gap: 3.75rem;
-    row-gap: 1.15rem;
+  }
+
+  @include mendia-tablet-midle-help {
+    column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
+
+  @include media-mobile {
+    justify-content: start;
   }
 }
 
 .list__item {
   white-space: nowrap;
-  height: 9.375rem;
+  height: 7.0625rem;
 
   display: flex;
   flex-direction: column;
@@ -46,6 +71,13 @@
 
   @include media-laptop-midle {
     width: 10.625rem;
+    height: 7.0625rem;
+  }
+
+  @include media-tablet-midle {
+    width: 8.125rem;
+    height: 5.4375rem;
+    row-gap: 1.25rem;
   }
 }
 
@@ -54,7 +86,18 @@
   margin-right: auto;
 }
 
+.help .image-sourse {
+  @include media-tablet-midle {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+
 .item__text {
   color: $color-help-item-text;
   @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+
+  @include media-tablet-midle {
+    @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+  }
 }

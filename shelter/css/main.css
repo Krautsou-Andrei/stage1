@@ -188,8 +188,8 @@ legend {
 }
 @media (max-width: 20rem) {
   .wrapper {
-    padding-left: 1.5625rem;
-    padding-right: 1.5625rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
   }
 }
 
@@ -652,6 +652,8 @@ legend {
 .about__wrapper {
   margin-left: auto;
   margin-right: auto;
+  padding-right: 1.5625rem;
+  padding-left: 1.5625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -889,6 +891,12 @@ legend {
   padding-top: 5rem;
   padding-bottom: 6.25rem;
 }
+@media (max-width: 25rem) {
+  .help {
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+  }
+}
 
 .help__wrapper {
   padding-left: 2.8125rem;
@@ -902,10 +910,21 @@ legend {
     padding-right: 2.4375rem;
   }
 }
+@media (max-width: 31.25rem) {
+  .help__wrapper {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
 
 .help__title {
   margin-bottom: 3.65rem;
   text-align: center;
+}
+@media (max-width: 25rem) {
+  .help__title {
+    margin-bottom: 2.625rem;
+  }
 }
 
 .list {
@@ -915,7 +934,7 @@ legend {
   -webkit-column-gap: 7.5rem;
      -moz-column-gap: 7.5rem;
           column-gap: 7.5rem;
-  row-gap: 1rem;
+  row-gap: 3.4375rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -932,13 +951,27 @@ legend {
     -webkit-column-gap: 3.75rem;
        -moz-column-gap: 3.75rem;
             column-gap: 3.75rem;
-    row-gap: 1.15rem;
+  }
+}
+@media (max-width: 31.25rem) {
+  .list {
+    -webkit-column-gap: 1.875rem;
+       -moz-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+    row-gap: 1.875rem;
+  }
+}
+@media (max-width: 20rem) {
+  .list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
 .list__item {
   white-space: nowrap;
-  height: 9.375rem;
+  height: 7.0625rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -952,12 +985,27 @@ legend {
 @media (max-width: 67.5rem) {
   .list__item {
     width: 10.625rem;
+    height: 7.0625rem;
+  }
+}
+@media (max-width: 25rem) {
+  .list__item {
+    width: 8.125rem;
+    height: 5.4375rem;
+    row-gap: 1.25rem;
   }
 }
 
 .image-sourse {
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 25rem) {
+  .help .image-sourse {
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 
 .item__text {
@@ -967,6 +1015,15 @@ legend {
   font-weight: 400;
   line-height: 115%;
   letter-spacing: 0.06em;
+}
+@media (max-width: 25rem) {
+  .item__text {
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+  }
 }
 
 .donation {

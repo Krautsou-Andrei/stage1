@@ -58,3 +58,15 @@
     @content;
   }
 }
+
+@mixin mendia-tablet-midle-help {
+  @media (max-width: $weight-tablet-midle-help) {
+    @content;
+  }
+}
+
+@mixin mendia-tablet-midle-donation {
+  @media (max-width: $weight-tablet-midle-donation) {
+    @content;
+  }
+}
