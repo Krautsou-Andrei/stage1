@@ -12,6 +12,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include media-mobile {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
 }
 
 .logo-title {
@@ -29,6 +34,10 @@
   font-family: "Arial";
   color: $color-menu-link-text;
   @include font($size: 0.9375rem, $height: 160%, $weight: 400, $letter: 0em);
+
+  @include media-tablet-burger {
+    display: none;
+  }
 }
 
 .menu__list {
