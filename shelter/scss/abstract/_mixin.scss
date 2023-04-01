@@ -1,5 +1,3 @@
-@use "./constants" as constants;
-
 @mixin font($size, $height: $size, $weight: 400, $style: normal, $letter: normal) {
   font-size: $size;
   font-style: $style;
@@ -14,25 +12,31 @@
 }
 
 @mixin media-laptop {
-  @media (max-width: constants.$content-width) {
+  @media (max-width: $weight-laptop) {
+    @content;
+  }
+}
+
+@mixin media-laptop-midle {
+  @media (max-width: $weight-laptop-midle) {
     @content;
   }
 }
 
 @mixin media-tablet {
-  @media (max-width: constants.$tablet-width) {
+  @media (max-width: $weight-tablet) {
     @content;
   }
 }
 
-@mixin media-midle-tablet {
-  @media (max-width: constants.$midle-tablet-width) {
+@mixin media-tablet-midle {
+  @media (max-width: $weight-tablet-midle) {
     @content;
   }
 }
 
 @mixin media-mobile {
-  @media (max-width: constants.$mobile-width) {
+  @media (max-width: $weight-mobile) {
     @content;
   }
 }

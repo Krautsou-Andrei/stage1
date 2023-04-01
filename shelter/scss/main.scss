@@ -5,6 +5,10 @@
 @import "./abstract/mixin";
 @import "./base/layout";
 
+@import "./base/wrapper";
+@import "./base/title";
+@import "./base/button";
+
 @import "./blocks/header";
 @import "./blocks/main-page";
 @import "./blocks/start-screen";

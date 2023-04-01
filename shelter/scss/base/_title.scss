@@ -1,0 +1,12 @@
+.title--xxl {
+  @include font($size: 2rem, $height: 110%, $weight: 400, $letter: 0.06em);
+}
+
+.title--xl {
+  color: $color-about-title-text;
+  @include font($size: 2.1875rem, $height: 130%, $weight: 400, $letter: 0.06em);
+}
+
+.title--lg {
+  @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+}

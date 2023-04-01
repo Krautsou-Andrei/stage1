@@ -1,0 +1,17 @@
+.wrapper {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  max-width: $weight-laptop;
+  width: 100%;
+
+  @include media-tablet {
+    padding-left: 1.875rem;
+    padding-right: 1.875rem;
+  }
+
+  @include media-mobile {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
+}

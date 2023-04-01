@@ -6,10 +6,6 @@
 .about__wrapper {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-
-  max-width: $weight-desctop;
 
   display: flex;
   justify-content: center;
@@ -26,11 +22,6 @@
 
 .title-about {
   max-width: 23.125rem;
-}
-
-.title--xl {
-  color: $color-about-title-text;
-  @include font($size: 2.1875rem, $height: 130%, $weight: 400, $letter: 0.06em);
 }
 
 .content__description {

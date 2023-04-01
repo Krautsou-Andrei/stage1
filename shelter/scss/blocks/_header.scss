@@ -6,13 +6,6 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.875rem;
-  max-width: $weight-desctop;
-  width: 100%;
-}
-
-.container {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
 }
 
 .header__wrapper {
@@ -24,11 +17,6 @@
 .logo-title {
   margin-bottom: 0.625rem;
   color: $color-logo-text;
-  // cursor: pointer;
-}
-
-.title--xxl {
-  @include font($size: 2rem, $height: 110%, $weight: 400, $letter: 0.06em);
 }
 
 .logo-subtitle {
