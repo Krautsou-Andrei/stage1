@@ -154,7 +154,8 @@ legend {
   background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
 }
 
-.menu__link:active + .link-border, .menu__link:hover {
+.menu__link.current + .link-border,
+.menu__link:active + .link-border, .menu__link:hover:not(.menu__link.current) {
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -415,10 +416,11 @@ legend {
   position: relative;
 }
 
-.menu__link:hover {
+.menu__link:hover:not(.menu__link.current) {
   color: #fafafa;
 }
 
+.menu__link.current + .link-border,
 .menu__link:active + .link-border {
   display: block;
   position: absolute;
@@ -514,6 +516,8 @@ legend {
 
 @media (max-width: 67.5rem) {
   .start-screen__image {
+    width: 35.5625rem;
+    height: 37.625rem;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -905,7 +909,7 @@ legend {
   color: #545454;
 }
 
-.header-pets .menu__link:hover {
+.header-pets .menu__link:hover:not(.menu__link.current) {
   color: #292929;
 }
 

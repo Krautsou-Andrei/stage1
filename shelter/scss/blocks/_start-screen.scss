@@ -57,6 +57,9 @@
 
 .start-screen__image {
   @include media-laptop-midle {
+    width: 35.5625rem;
+    height: 37.625rem;
+
     align-self: flex-end;
   }
 }

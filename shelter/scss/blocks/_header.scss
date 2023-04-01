@@ -40,11 +40,12 @@
   position: relative;
 }
 
-.menu__link:hover {
+.menu__link:hover:not(.menu__link.current) {
   color: $color-menu-link-text-hover;
   @extend %transition-all;
 }
 
+.menu__link.current + .link-border,
 .menu__link:active + .link-border {
   display: block;
   position: absolute;

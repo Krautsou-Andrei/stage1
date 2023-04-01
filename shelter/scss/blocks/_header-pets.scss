@@ -15,7 +15,7 @@
   color: $color-header-pets-menu-link;
 }
 
-.header-pets .menu__link:hover {
+.header-pets .menu__link:hover:not(.menu__link.current) {
   color: $color-header-pets-menu-link-hover;
 }
 
