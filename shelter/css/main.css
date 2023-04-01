@@ -167,6 +167,8 @@ legend {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .wrapper {
@@ -917,6 +919,17 @@ legend {
 
 .list-footer {
   padding-top: 2.5rem;
+}
+@media (max-width: 48rem) {
+  .list-footer {
+    padding-top: 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 3.75rem;
+       -moz-column-gap: 3.75rem;
+            column-gap: 3.75rem;
+  }
 }
 
 .list-footer__item {

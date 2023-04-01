@@ -9,6 +9,12 @@
 
 .list-footer {
   padding-top: 2.5rem;
+
+  @include media-tablet {
+    padding-top: 0;
+    justify-content: center;
+    column-gap: 3.75rem;
+  }
 }
 
 .list-footer__item {
@@ -43,6 +49,7 @@
 
 .item-footer__image {
   display: block;
+
   min-width: 1.375rem;
 }
 
