@@ -8,6 +8,11 @@
   padding-right: 2.8125rem;
   margin-left: auto;
   margin-right: auto;
+
+  @include media-tablet {
+    padding-left: 2.4375rem;
+    padding-right: 2.4375rem;
+  }
 }
 
 .help__title {
@@ -23,6 +28,11 @@
   align-content: center;
   align-items: center;
   flex-wrap: wrap;
+
+  @include media-tablet {
+    column-gap: 3.75rem;
+    row-gap: 1.15rem;
+  }
 }
 
 .list__item {
@@ -33,6 +43,10 @@
   flex-direction: column;
   row-gap: 1.875rem;
   text-align: center;
+
+  @include media-tablet {
+    width: 10.625rem;
+  }
 }
 
 .image-sourse {

@@ -725,6 +725,12 @@ legend {
   margin-left: auto;
   margin-right: auto;
 }
+@media (max-width: 48rem) {
+  .help__wrapper {
+    padding-left: 2.4375rem;
+    padding-right: 2.4375rem;
+  }
+}
 
 .help__title {
   margin-bottom: 3.65rem;
@@ -750,6 +756,14 @@ legend {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media (max-width: 48rem) {
+  .list {
+    -webkit-column-gap: 3.75rem;
+       -moz-column-gap: 3.75rem;
+            column-gap: 3.75rem;
+    row-gap: 1.15rem;
+  }
+}
 
 .list__item {
   white-space: nowrap;
@@ -763,6 +777,11 @@ legend {
           flex-direction: column;
   row-gap: 1.875rem;
   text-align: center;
+}
+@media (max-width: 48rem) {
+  .list__item {
+    width: 10.625rem;
+  }
 }
 
 .image-sourse {
