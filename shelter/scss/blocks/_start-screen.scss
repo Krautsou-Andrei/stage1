@@ -9,9 +9,9 @@
 .start-screen__wrapper {
   display: flex;
   column-gap: 2.625rem;
-  flex-direction: column;
 
   @include media-laptop-midle {
+    flex-direction: column;
     flex-wrap: wrap;
   }
 }
@@ -58,7 +58,7 @@
 .start-screen__image {
   @include media-laptop-midle {
     width: 35.5625rem;
-    height: 37.625rem;
+    height: 37.0625rem;
 
     align-self: flex-end;
   }

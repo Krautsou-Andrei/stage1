@@ -169,6 +169,9 @@ legend {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-column-gap: 3.75rem;
+     -moz-column-gap: 3.75rem;
+          column-gap: 3.75rem;
 }
 
 .wrapper {
@@ -464,13 +467,13 @@ legend {
   -webkit-column-gap: 2.625rem;
      -moz-column-gap: 2.625rem;
           column-gap: 2.625rem;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 @media (max-width: 67.5rem) {
   .start-screen__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
@@ -536,7 +539,7 @@ legend {
 @media (max-width: 67.5rem) {
   .start-screen__image {
     width: 35.5625rem;
-    height: 37.625rem;
+    height: 37.0625rem;
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
@@ -565,7 +568,7 @@ legend {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (max-width: 48rem) {
+@media (max-width: 67.5rem) {
   .about__wrapper {
     row-gap: 5rem;
   }
@@ -648,7 +651,7 @@ legend {
      -moz-column-gap: 5.625rem;
           column-gap: 5.625rem;
 }
-@media (max-width: 48rem) {
+@media (max-width: 67.5rem) {
   .slider {
     -webkit-column-gap: 2.5rem;
        -moz-column-gap: 2.5rem;
@@ -656,7 +659,7 @@ legend {
   }
 }
 
-@media (max-width: 67.5rem) {
+@media (max-width: 75rem) {
   .slider__item:last-child {
     display: none;
   }
@@ -780,7 +783,7 @@ legend {
   row-gap: 1.875rem;
   text-align: center;
 }
-@media (max-width: 48rem) {
+@media (max-width: 67.5rem) {
   .list__item {
     width: 10.625rem;
   }
@@ -824,7 +827,7 @@ legend {
       -ms-flex-align: start;
           align-items: flex-start;
 }
-@media (max-width: 48rem) {
+@media (max-width: 67.5rem) {
   .donation__wrapper {
     row-gap: 3.75rem;
   }
@@ -920,7 +923,7 @@ legend {
 .list-footer {
   padding-top: 2.5rem;
 }
-@media (max-width: 48rem) {
+@media (max-width: 67.5rem) {
   .list-footer {
     padding-top: 0;
     -webkit-box-pack: center;

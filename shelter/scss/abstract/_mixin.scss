@@ -17,6 +17,12 @@
   }
 }
 
+@mixin media-laptop-midle-pets {
+  @media (max-width: $weight-laptop-midle-pets) {
+    @content;
+  }
+}
+
 @mixin media-laptop-midle {
   @media (max-width: $weight-laptop-midle) {
     @content;

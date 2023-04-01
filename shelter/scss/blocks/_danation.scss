@@ -14,7 +14,7 @@
   column-gap: 6.8125rem;
   align-items: flex-start;
 
-  @include media-tablet {
+  @include media-laptop-midle {
     row-gap: 3.75rem;
   }
 }

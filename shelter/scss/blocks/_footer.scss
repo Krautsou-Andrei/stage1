@@ -10,7 +10,7 @@
 .list-footer {
   padding-top: 2.5rem;
 
-  @include media-tablet {
+  @include media-laptop-midle {
     padding-top: 0;
     justify-content: center;
     column-gap: 3.75rem;
