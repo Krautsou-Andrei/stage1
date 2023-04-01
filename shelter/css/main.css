@@ -554,12 +554,19 @@ legend {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-column-gap: 6.8125rem;
      -moz-column-gap: 6.8125rem;
           column-gap: 6.8125rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+@media (max-width: 48rem) {
+  .about__wrapper {
+    row-gap: 5rem;
+  }
 }
 
 .about__content {
@@ -573,12 +580,20 @@ legend {
           flex-direction: column;
   row-gap: 1.5625rem;
 }
+@media (max-width: 48rem) {
+  .about__content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
 
 .title-about {
   max-width: 23.125rem;
 }
 
 .content__description {
+  font-family: "arial";
   font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;

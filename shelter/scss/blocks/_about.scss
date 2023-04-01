@@ -9,8 +9,13 @@
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   column-gap: 6.8125rem;
   align-items: flex-start;
+
+  @include media-tablet {
+    row-gap: 5rem;
+  }
 }
 
 .about__content {
@@ -18,6 +23,10 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.5625rem;
+
+  @include media-tablet {
+    order: -1;
+  }
 }
 
 .title-about {
@@ -25,6 +34,7 @@
 }
 
 .content__description {
+  font-family: "arial";
   @include font($size: 0.9375rem, $height: 160%, $weight: 400, $letter: normal);
 }
 
