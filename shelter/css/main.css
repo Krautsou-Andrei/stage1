@@ -1189,11 +1189,22 @@ legend {
             column-gap: 3.75rem;
   }
 }
+@media (max-width: 25rem) {
+  .list-footer {
+    padding-top: 1.875rem;
+  }
+}
 
 .list-footer__item {
   max-width: 17.5rem;
   margin-top: 1rem;
   margin-bottom: 3.75rem;
+}
+@media (max-width: 25rem) {
+  .list-footer__item {
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .title--footer {
@@ -1213,9 +1224,29 @@ legend {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media (max-width: 25rem) {
+  .item-footer {
+    min-height: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    row-gap: 2.5rem;
+  }
+}
 
 .item-footer--center {
   min-width: 18.875rem;
+}
+.item-footer--center .item-footer__description {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+@media (max-width: 25rem) {
+  .item-footer__title {
+    max-width: 16.875rem;
+    text-align: center;
+  }
 }
 
 .email,
@@ -1235,6 +1266,13 @@ legend {
 .item-footer__image {
   display: block;
   min-width: 1.375rem;
+}
+
+@media (max-width: 25rem) {
+  .item-footer-image__footer-image {
+    width: 16.25rem;
+    height: 16.8125rem;
+  }
 }
 
 .item-footer__text {
