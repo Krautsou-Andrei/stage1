@@ -17,6 +17,12 @@
   @include media-laptop-midle {
     row-gap: 3.75rem;
   }
+
+  @include mendia-tablet-midle-donation {
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+    row-gap: 2.625rem;
+  }
 }
 
 .donation__content {
@@ -31,15 +37,28 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
+
+  @include mendia-tablet-midle-donation {
+    align-items: center;
+  }
 }
 
 .content-donation .content__title {
   max-width: 18.75rem;
+
+  @include mendia-tablet-midle-donation {
+    text-align: center;
+  }
 }
 
 .sub-title {
   color: $color-donation-content-title-text;
   @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+
+  @include mendia-tablet-midle-donation {
+    line-height: 160%;
+    letter-spacing: normal;
+  }
 }
 
 .donation__credit-card {
@@ -64,7 +83,7 @@
 
 .credit-card__number {
   color: $color-donation-content-credit-card-text;
-  @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+  @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
 }
 
 .donation__description {
@@ -72,4 +91,11 @@
   font-style: "italic";
   color: $color-donation-description-text;
   @include font($size: 0.75rem, $height: 150%, $weight: 400, $letter: normal);
+}
+
+.donation__image {
+  @include mendia-tablet-midle-donation {
+    width: 16.25rem;
+    height: 8.4375rem;
+  }
 }

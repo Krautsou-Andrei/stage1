@@ -1055,6 +1055,13 @@ legend {
     row-gap: 3.75rem;
   }
 }
+@media (max-width: 31.25rem) {
+  .donation__wrapper {
+    padding-top: 2.625rem;
+    padding-bottom: 2.625rem;
+    row-gap: 2.625rem;
+  }
+}
 
 .donation__content {
   max-width: 23.75rem;
@@ -1077,9 +1084,21 @@ legend {
           flex-direction: column;
   row-gap: 1.25rem;
 }
+@media (max-width: 31.25rem) {
+  .content-donation {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .content-donation .content__title {
   max-width: 18.75rem;
+}
+@media (max-width: 31.25rem) {
+  .content-donation .content__title {
+    text-align: center;
+  }
 }
 
 .sub-title {
@@ -1089,6 +1108,12 @@ legend {
   font-weight: 400;
   line-height: 110%;
   letter-spacing: 0.06em;
+}
+@media (max-width: 31.25rem) {
+  .sub-title {
+    line-height: 160%;
+    letter-spacing: normal;
+  }
 }
 
 .donation__credit-card {
@@ -1120,10 +1145,10 @@ legend {
 
 .credit-card__number {
   color: #545454;
-  font-size: 1.25rem;
+  font-size: 0.9375rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 115%;
+  line-height: 110%;
   letter-spacing: 0.06em;
 }
 
@@ -1136,6 +1161,13 @@ legend {
   font-weight: 400;
   line-height: 150%;
   letter-spacing: normal;
+}
+
+@media (max-width: 31.25rem) {
+  .donation__image {
+    width: 16.25rem;
+    height: 8.4375rem;
+  }
 }
 
 .footer__wrapper {
