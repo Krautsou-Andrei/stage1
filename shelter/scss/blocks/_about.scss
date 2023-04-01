@@ -16,6 +16,10 @@
   @include media-laptop-midle {
     row-gap: 5rem;
   }
+
+  @include media-tablet-midle {
+    row-gap: 2.625rem;
+  }
 }
 
 .about__content {
@@ -25,19 +29,35 @@
   row-gap: 1.5625rem;
 
   @include media-tablet {
+    row-gap: 1.375rem;
     order: -1;
   }
 }
 
 .title-about {
   max-width: 23.125rem;
+
+  @include media-tablet-midle {
+    text-align: center;
+  }
 }
 
 .content__description {
   font-family: "arial";
   @include font($size: 0.9375rem, $height: 160%, $weight: 400, $letter: normal);
+
+  @include media-mobile {
+    text-align: justify;
+  }
 }
 
 .description--about {
   color: $color-about-description-text;
+}
+
+.about__image {
+  @include media-mobile {
+    width: 16.25rem;
+    height: 22.0625rem;
+  }
 }

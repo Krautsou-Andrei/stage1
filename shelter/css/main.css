@@ -188,8 +188,8 @@ legend {
 }
 @media (max-width: 20rem) {
   .wrapper {
-    padding-left: 0.625rem;
-    padding-right: 0.625rem;
+    padding-left: 1.5625rem;
+    padding-right: 1.5625rem;
   }
 }
 
@@ -208,6 +208,15 @@ legend {
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 0.06em;
+}
+@media (max-width: 25rem) {
+  .title--xl {
+    font-size: 1.5614rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+  }
 }
 
 .title--lg {
@@ -386,6 +395,8 @@ legend {
   margin-left: auto;
   margin-right: auto;
   padding-top: 1.875rem;
+  padding-left: 0.625rem;
+  padding-right: 0.625rem;
 }
 
 .header__wrapper {
@@ -661,6 +672,11 @@ legend {
     row-gap: 5rem;
   }
 }
+@media (max-width: 25rem) {
+  .about__wrapper {
+    row-gap: 2.625rem;
+  }
+}
 
 .about__content {
   max-width: 26.875rem;
@@ -675,6 +691,7 @@ legend {
 }
 @media (max-width: 48rem) {
   .about__content {
+    row-gap: 1.375rem;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
             order: -1;
@@ -683,6 +700,11 @@ legend {
 
 .title-about {
   max-width: 23.125rem;
+}
+@media (max-width: 25rem) {
+  .title-about {
+    text-align: center;
+  }
 }
 
 .content__description {
@@ -693,9 +715,21 @@ legend {
   line-height: 160%;
   letter-spacing: normal;
 }
+@media (max-width: 20rem) {
+  .content__description {
+    text-align: justify;
+  }
+}
 
 .description--about {
   color: #4c4c4c;
+}
+
+@media (max-width: 20rem) {
+  .about__image {
+    width: 16.25rem;
+    height: 22.0625rem;
+  }
 }
 
 .pets {
