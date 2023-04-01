@@ -810,6 +810,8 @@ legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -820,9 +822,21 @@ legend {
       -ms-flex-align: start;
           align-items: flex-start;
 }
+@media (max-width: 48rem) {
+  .donation__wrapper {
+    row-gap: 3.75rem;
+  }
+}
 
 .donation__content {
   max-width: 23.75rem;
+}
+@media (max-width: 48rem) {
+  .donation__content {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 .content-donation {
@@ -834,6 +848,10 @@ legend {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 1.25rem;
+}
+
+.content-donation .content__title {
+  max-width: 18.75rem;
 }
 
 .sub-title {
@@ -848,6 +866,7 @@ legend {
 .donation__credit-card {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
+  max-width: 21.875rem;
   height: 2.6875rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,7 +907,7 @@ legend {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
-  letter-spacing: 0.06em;
+  letter-spacing: normal;
 }
 
 .footer__wrapper {

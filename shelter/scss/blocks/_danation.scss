@@ -9,19 +9,32 @@
   padding-bottom: 6.25rem;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   column-gap: 6.8125rem;
   align-items: flex-start;
+
+  @include media-tablet {
+    row-gap: 3.75rem;
+  }
 }
 
 .donation__content {
   max-width: 23.75rem;
+
+  @include media-tablet {
+    order: -1;
+  }
 }
 
 .content-donation {
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
+}
+
+.content-donation .content__title {
+  max-width: 18.75rem;
 }
 
 .sub-title {
@@ -33,6 +46,7 @@
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 
+  max-width: 21.875rem;
   height: 2.6875rem;
 
   display: flex;
@@ -57,5 +71,5 @@
   font-family: "arialitalic";
   font-style: "italic";
   color: $color-donation-description-text;
-  @include font($size: 0.75rem, $height: 150%, $weight: 400, $letter: 0.06em);
+  @include font($size: 0.75rem, $height: 150%, $weight: 400, $letter: normal);
 }
