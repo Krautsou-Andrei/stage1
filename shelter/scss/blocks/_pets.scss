@@ -27,6 +27,16 @@
   display: flex;
   justify-content: center;
   column-gap: 5.625rem;
+
+  @include media-tablet {
+    column-gap: 2.5rem;
+  }
+}
+
+.slider__item:last-child {
+  @include media-laptop-midle {
+    display: none;
+  }
 }
 
 .button__slider {

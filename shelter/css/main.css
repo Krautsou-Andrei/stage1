@@ -646,6 +646,19 @@ legend {
      -moz-column-gap: 5.625rem;
           column-gap: 5.625rem;
 }
+@media (max-width: 48rem) {
+  .slider {
+    -webkit-column-gap: 2.5rem;
+       -moz-column-gap: 2.5rem;
+            column-gap: 2.5rem;
+  }
+}
+
+@media (max-width: 67.5rem) {
+  .slider__item:last-child {
+    display: none;
+  }
+}
 
 .button__slider {
   position: absolute;
