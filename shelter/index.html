@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/icon/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/index.js"></script>
   <title>Shelter</title>
 </head>
 
@@ -36,25 +37,25 @@
             </ul>
           </div>
         </nav>
-        <div class="header__burger-menu">
-          <button class="burger-menu__button button-burger" type="button">
+        <div class="header__burger-menu" data-menu-burger>
+          <button class="burger-menu__button button-burger" type="button" aria-expanded="false" data-menu-burger-button>
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <nav class="burger-menu__menu">
+          <nav class="burger-menu__menu" data-menu-burger-content>
             <div class="burger-menu">
               <ul class="burger-menu__list">
-                <li class="burger-menu__item"><a class="burger-menu__link current" href="javascript:void">About the shelter</a>
+                <li class="burger-menu__item"><a class="menu__link current" href="javascript:void" data-menu-burger-link>About the shelter</a>
                   <span class="link-border"></span>
                 </li>
-                <li class="burger-menu__item"><a class="burger-menu__link" href="./pets/index.html">Our pets</a>
+                <li class="burger-menu__item"><a class="menu__link" href="./pets/index.html" data-menu-burger-link>Our pets</a>
                   <span class="link-border"></span>
                 </li>
-                <li class="burger-menu__item"><a class="burger-menu__link" href="#help">Help the shelter</a>
+                <li class="burger-menu__item"><a class="menu__link" href="#help" data-menu-burger-link>Help the shelter</a>
                   <span class="link-border"></span>
                 </li>
-                <li class="burger-menu__item"><a class="burger-menu__link" href="#contacts">Contacts</a>
+                <li class="burger-menu__item"><a class="menu__link" href="#contacts" data-menu-burger-link>Contacts</a>
                   <span class="link-border"></span>
                 </li>
               </ul>
@@ -84,6 +85,11 @@
   </header>
   <main class="main">
     <div class="main__wrapper">
+      <dialog class="popup" open>
+        <div class="popup__wrapper">
+          dialog
+        </div>
+      </dialog>
       <section id="about" class="about">
         <div class="about__wrapper wrapper">
           <div class="about__image">

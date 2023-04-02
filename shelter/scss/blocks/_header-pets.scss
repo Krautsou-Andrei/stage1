@@ -22,3 +22,7 @@
 .header-pets .menu__link:hover + .link-border {
   color: $color-header-pets-menu-link-border;
 }
+
+.header-pets .menu__link.current {
+  color: $color-header-pets-menu-link-hover;
+}

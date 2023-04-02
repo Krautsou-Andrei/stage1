@@ -55,6 +55,10 @@
   position: relative;
 }
 
+.menu__link.current {
+  color: $color-menu-link-text-hover;
+}
+
 .menu__link:hover:not(.menu__link.current) {
   color: $color-menu-link-text-hover;
   @extend %transition-all;
@@ -74,4 +78,10 @@
 .header__burger-menu {
   width: 1.875rem;
   height: 1.375rem;
+}
+
+.header__burger-menu:has(.button-burger[aria-expanded="true"]) {
+  position: fixed;
+  top: 3.125rem;
+  right: 1.875rem;
 }

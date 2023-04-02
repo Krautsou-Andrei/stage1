@@ -1,0 +1,9 @@
+.burger-menu .menu__link {
+  font-family: "Arial";
+  color: $color-burger-menu-link-text;
+
+  @include font($size: 2rem, $height: 160%, $weight: 400, $letter: normal);
+}
+
+.burger-menu .link-border {
+}
