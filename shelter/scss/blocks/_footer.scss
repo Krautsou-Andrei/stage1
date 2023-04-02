@@ -3,20 +3,22 @@
 }
 
 .footer__wrapper {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+ 
 }
 
 .list-footer {
   padding-top: 2.5rem;
 
   @include media-laptop-midle {
-    padding-top: 0;
+    padding-top: 1.875rem;
     justify-content: center;
     column-gap: 3.75rem;
   }
 
   @include media-tablet-midle {
+    padding-top: 0;
     padding-top: 1.875rem;
   }
 }
@@ -26,8 +28,11 @@
   margin-top: 1rem;
   margin-bottom: 3.75rem;
 
-  @include media-tablet-midle {
+  @include media-tablet {
     margin-top: 0;
+  }
+
+  @include media-tablet-midle {
     margin-bottom: 2.5rem;
   }
 }

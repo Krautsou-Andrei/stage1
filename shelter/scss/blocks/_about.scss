@@ -1,12 +1,4 @@
-.about {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
-}
-
 .about__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-
   padding-right: 1.5625rem;
   padding-left: 1.5625rem;
 
@@ -32,8 +24,11 @@
   row-gap: 1.5625rem;
 
   @include media-tablet {
-    row-gap: 1.375rem;
     order: -1;
+  }
+
+  @include media-tablet-midle {
+    row-gap: 1.375rem;
   }
 }
 

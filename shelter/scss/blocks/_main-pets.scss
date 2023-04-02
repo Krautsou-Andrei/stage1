@@ -1,14 +1,8 @@
 .main-pets {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
-
   background-color: $color-main-pets-background;
 }
 
 .main-pets__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-
   display: flex;
   flex-direction: column;
   align-items: center;

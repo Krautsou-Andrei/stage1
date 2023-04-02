@@ -1,16 +1,8 @@
 .pets {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
   background-color: $color-pets-background;
 }
 
 .pets__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -18,6 +10,8 @@
   row-gap: 3.75rem;
 
   @include media-mobile {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
     row-gap: 2.625rem;
   }
 }

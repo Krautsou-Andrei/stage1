@@ -1,16 +1,11 @@
-.start-screen {
+.start-screen__wrapper {
   padding-top: 5.625rem;
 
-  @include media-laptop-midle {
-    padding-top: 3.75rem;
-  }
-}
-
-.start-screen__wrapper {
   display: flex;
   column-gap: 2.625rem;
 
   @include media-laptop-midle {
+    padding-top: 3.75rem;
     flex-direction: column;
     flex-wrap: wrap;
   }
@@ -28,6 +23,10 @@
     padding-top: 0;
     padding-bottom: 6.25rem;
     align-self: center;
+  }
+
+  @include media-tablet-midle {
+    padding-bottom: 6.5625rem;
   }
 }
 

@@ -3,11 +3,13 @@
 }
 
 .header__container {
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 1.875rem;
-  padding-left: 0.625rem;
-  padding-right: 0.625rem;
+  padding-bottom: 0;
+
+  @include media-tablet-midle {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+  }
 }
 
 .header__wrapper {
@@ -27,9 +29,15 @@
 }
 
 .logo-subtitle {
+  padding-left: 0.25rem;
+
   font-family: "Arial";
   color: $color-logo-subtitle;
-  @include font($size: 0.8125rem, $height: 115.4%, $weight: 400, $letter: 0.01em);
+  @include font($size: 0.8125rem, $height: 115.4%, $weight: 400, $letter: 0.1em);
+
+  @include media-tablet-midle {
+    padding-left: 0;
+  }
 }
 
 .menu {
@@ -65,4 +73,9 @@
 
   background-color: $color-menu-link-border;
   @extend %transition-all;
+}
+
+.header__burger-menu {
+  width: 1.875rem;
+  height: 1.375rem;
 }

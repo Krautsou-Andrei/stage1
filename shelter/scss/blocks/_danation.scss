@@ -3,24 +3,19 @@
 }
 
 .donation__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  column-gap: 6.8125rem;
-  align-items: flex-start;
+  column-gap: 1.875rem;
+  align-items: center;
 
   @include media-laptop-midle {
     row-gap: 3.75rem;
   }
 
   @include mendia-tablet-midle-donation {
-    padding-top: 2.625rem;
-    padding-bottom: 2.625rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
     row-gap: 2.625rem;
   }
 }
@@ -83,7 +78,11 @@
 
 .credit-card__number {
   color: $color-donation-content-credit-card-text;
-  @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+  @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+
+  @include media-tablet-midle {
+    @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+  }
 }
 
 .donation__description {
@@ -91,6 +90,10 @@
   font-style: "italic";
   color: $color-donation-description-text;
   @include font($size: 0.75rem, $height: 150%, $weight: 400, $letter: normal);
+
+  @include media-tablet-midle {
+    text-align: justify;
+  }
 }
 
 .donation__image {
