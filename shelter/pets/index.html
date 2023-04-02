@@ -12,7 +12,7 @@
 
 <body>
   <header class="header header-pets">
-    <div class="header__container container ">
+    <div class="header__container wrapper">
       <div class="header__wrapper">
         <div class="header__logo">
           <h1 class="logo-title title--xxl"><a href="../index.html">Cozy House</a></h1>
@@ -21,16 +21,16 @@
         <nav class="header__menu">
           <div class="menu">
             <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="../#about">About the shelter</a>
+              <li class="menu__item"><a class="menu__link" href="../index.html">About the shelter</a>
                 <span class="link-border"></span>
               </li>
-              <li class="menu__item"><a class="menu__link" href="../#pets">Our pets</a>
+              <li class="menu__item"><a class="menu__link current" href="javascript:void">Our pets</a>
                 <span class="link-border"></span>
               </li>
-              <li class="menu__item"><a class="menu__link" href="../#help">Help the shelter</a>
+              <li class="menu__item"><a class="menu__link" href="#help">Help the shelter</a>
                 <span class="link-border"></span>
               </li>
-              <li class="menu__item"><a class="menu__link" href="../#contacts">Contacts</a>
+              <li class="menu__item"><a class="menu__link" href="#contacts">Contacts</a>
                 <span class="link-border"></span>
               </li>
             </ul>
@@ -40,8 +40,8 @@
 
     </div>
   </header>
-  <main class="main main-pets">
-    <div class="main-pets__wrapper">
+  <main class="main main-pets" id="help">
+    <div class="main-pets__wrapper wrapper">
       <h2 class="main-pets__title main__title title--xl">Our friends who
         are looking for a house</h2>
       <ul class="main-pets__list list-pets">
@@ -119,7 +119,7 @@
         </li>
 
       </ul>
-      <div class="main-buttons-wrapper ">
+      <div class="main-buttons-wrapper">
         <div class="main__pagination pagination">
           <div class="pagination__prev-prev">
             <button class="button button-prev-prev" type="button"></button>
@@ -146,8 +146,8 @@
     </div>
 
   </main>
-  <footer class="footer">
-    <section class="footer__wrapper">
+  <footer class="footer" id="contacts">
+    <section class="footer__wrapper wrapper">
       <ul class="footer__list list-footer layout-3-column">
         <li class="list-footer__item item-footer">
           <h2 class="item-footer__title title--xl title--footer">For questions and suggestions</h2>

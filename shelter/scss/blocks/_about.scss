@@ -1,20 +1,20 @@
-.about {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
-}
-
 .about__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-
-  max-width: $weight-desctop;
+  padding-right: 1.5625rem;
+  padding-left: 1.5625rem;
 
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   column-gap: 6.8125rem;
   align-items: flex-start;
+
+  @include media-laptop-midle {
+    row-gap: 5rem;
+  }
+
+  @include media-tablet-midle {
+    row-gap: 2.625rem;
+  }
 }
 
 .about__content {
@@ -22,21 +22,40 @@
   display: flex;
   flex-direction: column;
   row-gap: 1.5625rem;
+
+  @include media-tablet {
+    order: -1;
+  }
+
+  @include media-tablet-midle {
+    row-gap: 1.375rem;
+  }
 }
 
 .title-about {
   max-width: 23.125rem;
-}
 
-.title--xl {
-  color: $color-about-title-text;
-  @include font($size: 2.1875rem, $height: 130%, $weight: 400, $letter: 0.06em);
+  @include media-tablet-midle {
+    text-align: center;
+  }
 }
 
 .content__description {
+  font-family: "arial";
   @include font($size: 0.9375rem, $height: 160%, $weight: 400, $letter: normal);
+
+  @include media-mobile {
+    text-align: justify;
+  }
 }
 
 .description--about {
   color: $color-about-description-text;
+}
+
+.about__image {
+  @include media-mobile {
+    width: 16.25rem;
+    height: 22.0625rem;
+  }
 }

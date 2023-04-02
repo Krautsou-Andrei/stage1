@@ -1,4 +1,6 @@
 .layout-3-column {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  column-gap: 3.75rem;
 }

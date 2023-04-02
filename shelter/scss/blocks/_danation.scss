@@ -3,37 +3,64 @@
 }
 
 .donation__wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5rem 2.5rem 6.25rem 2.5rem;
-
-  max-width: $weight-desctop;
-
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  column-gap: 6.8125rem;
-  align-items: flex-start;
+  column-gap: 1.875rem;
+  align-items: center;
+
+  @include media-laptop-midle {
+    row-gap: 3.75rem;
+  }
+
+  @include mendia-tablet-midle-donation {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    row-gap: 2.625rem;
+  }
 }
 
 .donation__content {
   max-width: 23.75rem;
+
+  @include media-tablet {
+    order: -1;
+  }
 }
 
 .content-donation {
   display: flex;
   flex-direction: column;
   row-gap: 1.25rem;
+
+  @include mendia-tablet-midle-donation {
+    align-items: center;
+  }
+}
+
+.content-donation .content__title {
+  max-width: 18.75rem;
+
+  @include mendia-tablet-midle-donation {
+    text-align: center;
+  }
 }
 
 .sub-title {
   color: $color-donation-content-title-text;
   @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+
+  @include mendia-tablet-midle-donation {
+    line-height: 160%;
+    letter-spacing: normal;
+  }
 }
 
 .donation__credit-card {
   padding-left: 0.9375rem;
   padding-right: 0.9375rem;
 
+  max-width: 21.875rem;
   height: 2.6875rem;
 
   display: flex;
@@ -52,11 +79,26 @@
 .credit-card__number {
   color: $color-donation-content-credit-card-text;
   @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+
+  @include media-tablet-midle {
+    @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+  }
 }
 
 .donation__description {
   font-family: "arialitalic";
   font-style: "italic";
   color: $color-donation-description-text;
-  @include font($size: 0.75rem, $height: 150%, $weight: 400, $letter: 0.06em);
+  @include font($size: 0.75rem, $height: 150%, $weight: 400, $letter: normal);
+
+  @include media-tablet-midle {
+    text-align: justify;
+  }
+}
+
+.donation__image {
+  @include mendia-tablet-midle-donation {
+    width: 16.25rem;
+    height: 8.4375rem;
+  }
 }

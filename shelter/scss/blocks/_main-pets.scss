@@ -1,18 +1,8 @@
 .main-pets {
-  padding-top: 5rem;
-  padding-bottom: 6.25rem;
-
   background-color: $color-main-pets-background;
 }
 
 .main-pets__wrapper {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-  margin-left: auto;
-  margin-right: auto;
-
-  max-width: $weight-desctop;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,14 +30,6 @@
   height: 3.25rem;
 }
 
-.main-pets .button-prev-prev:hover,
-.main-pets .button-prev:hover,
-.main-pets .button-next:hover,
-.main-pets .button-next-next:hover {
-  border-color: $color-main-pets-pagination-border-hover;
-  background-color: $color-main-pets-pagination-background-hover;
-}
-
 .main-pets .button-prev-prev,
 .main-pets .button-prev,
 .main-pets .button-next,
@@ -55,55 +37,6 @@
   border: 0.125rem solid $color-main-pets-pagination-border;
 }
 
-.button-prev-prev {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.6875rem, 1.4375rem;
-  background-image: url("./assets/icon/arrow-arrow-pagination.svg");
-
-  &:hover {
-    transform: rotate(180deg);
-    background-image: url("./assets/icon/arrow-arrow-pagination-active.svg");
-  }
-}
-
-.main-pets .button-prev {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 0.812523rem, 1.4375rem;
-  background-image: url("./assets/icon/arrow-pagination.svg");
-
-  &:hover {
-    transform: rotate(180deg);
-    background-image: url("./assets/icon/arrow-pagination-active.svg");
-  }
-}
-
 .view-page {
   background: $color-main-pets-pagination-view-background;
-}
-
-.main-pets .button-next {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 0.812523rem, 1.4375rem;
-  background-image: url("./assets/icon/arrow-pagination.svg");
-
-  &:hover {
-    transform: rotate(360deg);
-    background-image: url("./assets/icon/arrow-pagination-active.svg");
-  }
-}
-
-.button-next-next {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 1.6875rem, 1.4375rem;
-  transform: rotate(180deg);
-  background-image: url("./assets/icon/arrow-arrow-pagination.svg");
-
-  &:hover {
-    transform: rotate(360deg);
-    background-image: url("./assets/icon/arrow-arrow-pagination-active.svg");
-  }
 }

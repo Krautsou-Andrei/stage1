@@ -12,7 +12,7 @@
 
 <body>
   <header class="header">
-    <div class="header__container container">
+    <div class="header__container wrapper">
       <div class="header__wrapper">
         <div class="header__logo">
           <h1 class="logo-title title--xxl"><a href="./index.html">Cozy House</a></h1>
@@ -21,10 +21,10 @@
         <nav class="header__menu">
           <div class="menu">
             <ul class="menu__list">
-              <li class="menu__item"><a class="menu__link" href="#about">About the shelter</a>
+              <li class="menu__item"><a class="menu__link current" href="javascript:void">About the shelter</a>
                 <span class="link-border"></span>
               </li>
-              <li class="menu__item"><a class="menu__link" href="#pets">Our pets</a>
+              <li class="menu__item"><a class="menu__link" href="./pets/index.html">Our pets</a>
                 <span class="link-border"></span>
               </li>
               <li class="menu__item"><a class="menu__link" href="#help">Help the shelter</a>
@@ -36,11 +36,37 @@
             </ul>
           </div>
         </nav>
+        <div class="header__burger-menu">
+          <button class="burger-menu__button button-burger" type="button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="burger-menu__menu">
+            <div class="burger-menu">
+              <ul class="burger-menu__list">
+                <li class="burger-menu__item"><a class="burger-menu__link current" href="javascript:void">About the shelter</a>
+                  <span class="link-border"></span>
+                </li>
+                <li class="burger-menu__item"><a class="burger-menu__link" href="./pets/index.html">Our pets</a>
+                  <span class="link-border"></span>
+                </li>
+                <li class="burger-menu__item"><a class="burger-menu__link" href="#help">Help the shelter</a>
+                  <span class="link-border"></span>
+                </li>
+                <li class="burger-menu__item"><a class="burger-menu__link" href="#contacts">Contacts</a>
+                  <span class="link-border"></span>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+        </div>
       </div>
       <section class="start-screen">
         <div class="start-screen__wrapper">
           <div class="start-screen__content content">
-            <h2 class="start-screen__title title-start-screen ">Not only people need a house</h2>
+            <h2 class="start-screen__title title-start-screen ">Not only people <br /> need a house</h2>
 
             <p class="start-screen__description ">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
             <div class="content__button">
@@ -59,12 +85,12 @@
   <main class="main">
     <div class="main__wrapper">
       <section id="about" class="about">
-        <div class="about__wrapper">
+        <div class="about__wrapper wrapper">
           <div class="about__image">
             <img class="image-about" src="./assets/image/about-pets.jpg" alt="about pets" width="300" height="408">
           </div>
           <div class="about__content content">
-            <h2 class="content__title title-about title--xl ">About the shelter “Cozy House”</h2>
+            <h2 class="content__title title-about title--xl ">About the shelter <br /> “Cozy House”</h2>
             <p class="content__description description--about">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky
               chance to become
               dearly loved.</p>
@@ -75,13 +101,11 @@
         </div>
       </section>
       <section id="pets" class="pets">
-        <div class="pets__wrapper">
+        <div class="pets__wrapper wrapper">
           <h2 class="pets__title title--xl">Our friends who <br />
             are looking for a house</h2>
           <div class="slider-wrapper">
-            <div class=" button__slider prev">
-              <button class="button button-prev" type="button"></button>
-            </div>
+
             <div class="slider">
               <div class="slider__item item">
                 <div class="item__slider-image">
@@ -113,10 +137,14 @@
                 </div>
               </div>
             </div>
-            <div class="button__slider next">
-              <button class="button button-next" type="button"></button>
+            <div class="button-slider-wrapper">
+              <div class=" button__slider prev">
+                <button class="button button-prev" type="button"></button>
+              </div>
+              <div class="button__slider next">
+                <button class="button button-next" type="button"></button>
+              </div>
             </div>
-
           </div>
 
           <div class="pets__button">
@@ -125,7 +153,7 @@
         </div>
       </section>
       <section id="help" class="help">
-        <div class="help__wrapper">
+        <div class="help__wrapper wrapper">
           <h2 class="help__title title--xl">How you can help<br />
             our shelter</h2>
           <ul class="help__list list">
@@ -169,12 +197,12 @@
         </div>
       </section>
       <section class="donation">
-        <div class="donation__wrapper">
+        <div class="donation__wrapper wrapper">
           <div class="donation__image">
             <img class="image-sourse" src="./assets/image/donation-dog.png" alt="donation image" width="505" height="261">
           </div>
           <div class="donation__content content content-donation">
-            <h2 class="content__title title--xl">You can also make a donation</h2>
+            <h2 class="content__title title--xl">You can also <br /> make a donation</h2>
             <div class="sub-title">Name of the bank / Type of bank account</div>
             <div class="donation__credit-card credit-card">
               <div class="credit-card__image">
@@ -191,7 +219,7 @@
     </div>
   </main>
   <footer id="contacts" class="footer">
-    <section class="footer__wrapper">
+    <section class="footer__wrapper wrapper">
       <ul class="footer__list list-footer layout-3-column">
         <li class="list-footer__item item-footer">
           <h2 class="item-footer__title title--xl title--footer">For questions and suggestions</h2>
