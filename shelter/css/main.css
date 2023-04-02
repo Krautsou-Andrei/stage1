@@ -256,15 +256,16 @@ legend {
   line-height: 100%;
   letter-spacing: 0.06em;
 }
-
-.button:active {
+.button:hover:not(:disabled):not(.view-page) {
+  background-color: #fddcc4;
+  cursor: pointer;
+}
+.button:active:not(:disabled):not(.view-page) {
   -webkit-transform: translateY(0.125rem);
           transform: translateY(0.125rem);
 }
-
-.button:hover {
-  background-color: #fddcc4;
-  cursor: pointer;
+.button:disabled:not(.view-page) {
+  border: 0.125rem solid #cdcdcd;
 }
 
 .button-start-screen {
@@ -284,50 +285,40 @@ legend {
   border: 2px solid #f1cdb3;
 }
 
-.main-pets .button-prev-prev,
-.main-pets .button-prev,
-.main-pets .button-next,
-.main-pets .button-next-next {
-  border: 0.125rem solid #cdcdcd;
-}
-
-.main-pets .button-prev-prev:hover,
-.main-pets .button-prev:hover,
-.main-pets .button-next:hover,
-.main-pets .button-next-next:hover {
-  border-color: #f1cdb3;
-  background-color: transparent;
-}
-
 .button-prev-prev {
+  border: 0.125rem solid #f1cdb3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.6875rem, 1.4375rem;
-  background-image: url("../assets/icon/arrow-arrow-pagination.svg");
-}
-.button-prev-prev:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   background-image: url("../assets/icon/arrow-arrow-pagination-active.svg");
+}
+.button-prev-prev:disabled {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background-image: url("../assets/icon/arrow-arrow-pagination.svg");
 }
 
 .main-pets .button-prev {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
-  background-image: url("../assets/icon/arrow-pagination.svg");
-}
-.main-pets .button-prev:hover {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   background-image: url("../assets/icon/arrow-pagination-active.svg");
+}
+.main-pets .button-prev:disabled {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  background-image: url("../assets/icon/arrow-pagination.svg");
 }
 
 .button-prev {
   width: 100%;
   height: 100%;
   border-radius: 6.25rem;
-  border: 2px solid #f1cdb3;
+  border: 0.125rem solid #f1cdb3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.875rem, 0.375rem;
@@ -338,7 +329,7 @@ legend {
   width: 100%;
   height: 100%;
   border-radius: 6.25rem;
-  border: 2px solid #f1cdb3;
+  border: 0.125rem solid #f1cdb3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.875rem, 0.375rem;
@@ -346,31 +337,36 @@ legend {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+.button-next:active:not(:disabled) {
+  -webkit-transform: translateY(0.125rem) rotate(180deg);
+          transform: translateY(0.125rem) rotate(180deg);
+}
 
 .main-pets .button-next {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 0.812523rem, 1.4375rem;
-  background-image: url("../assets/icon/arrow-pagination.svg");
-}
-.main-pets .button-next:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
   background-image: url("../assets/icon/arrow-pagination-active.svg");
 }
+.main-pets .button-next:disabled {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-image: url("../assets/icon/arrow-pagination.svg");
+}
 
 .button-next-next {
+  border: 0.125rem solid #f1cdb3;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 1.6875rem, 1.4375rem;
+  background-image: url("../assets/icon/arrow-arrow-pagination-active.svg");
+}
+.button-next-next:disabled {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   background-image: url("../assets/icon/arrow-arrow-pagination.svg");
-}
-.button-next-next:hover {
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
-  background-image: url("../assets/icon/arrow-arrow-pagination-active.svg");
 }
 
 .button-pets {
@@ -389,14 +385,14 @@ legend {
   background-color: #f1cdb3;
 }
 
-.main-pets .button-prev-prev:active,
-.main-pets .button-prev:active {
+.main-pets .button-prev-prev:active:not(:disabled),
+.main-pets .button-prev:active:not(:disabled) {
   -webkit-transform: translateY(0.125rem) rotate(180deg);
           transform: translateY(0.125rem) rotate(180deg);
 }
 
-.main-pets .button-next:active,
-.main-pets .button-next-next:active {
+.main-pets .button-next:active:not(:disabled),
+.main-pets .button-next-next:active:not(:disabled) {
   -webkit-transform: translateY(0.125rem);
           transform: translateY(0.125rem);
 }
@@ -1432,13 +1428,6 @@ legend {
 .pagination__next-next {
   width: 3.25rem;
   height: 3.25rem;
-}
-
-.main-pets .button-prev-prev,
-.main-pets .button-prev,
-.main-pets .button-next,
-.main-pets .button-next-next {
-  border: 0.125rem solid #cdcdcd;
 }
 
 .view-page {
