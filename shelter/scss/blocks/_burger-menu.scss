@@ -45,6 +45,10 @@
   background: $color-burger-menu-button;
 }
 
+.header-pets .button-burger span {
+  background: $color-burger-menu-nutton-our-pets;
+}
+
 .button-burger span:nth-of-type(2) {
   top: calc(50% + 0.625rem);
 }

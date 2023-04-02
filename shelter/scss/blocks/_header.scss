@@ -34,10 +34,6 @@
   font-family: "Arial";
   color: $color-logo-subtitle;
   @include font($size: 0.8125rem, $height: 115.4%, $weight: 400, $letter: 0.1em);
-
-  @include media-tablet-midle {
-    padding-left: 0;
-  }
 }
 
 .menu {

@@ -35,6 +35,13 @@
 }
 
 .slider__item {
+  @include media-hover {
+    &:hover {
+      cursor: pointer;
+      box-shadow: $box-shadow-pets-item;
+    }
+  }
+
   &:last-child {
     @include media-laptop-midle-pets {
       display: none;

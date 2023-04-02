@@ -6,19 +6,70 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 2.8125rem;
+  row-gap: 3.75rem;
+
+  @include media-tablet {
+    row-gap: 1.875rem;
+    padding-bottom: 4.75rem;
+  }
+
+  @include media-tablet-midle {
+    padding-bottom: 2.625rem;
+    row-gap: 2.625rem;
+  }
+}
+
+.main-pets__title {
+  text-align: center;
 }
 
 .list-pets {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   column-gap: 2.5rem;
   row-gap: 1.875rem;
+
+  @include media-tablet {
+    margin-bottom: 0.625rem;
+  }
+
+  @include media-tablet-midle {
+    margin-bottom: 0;
+  }
+}
+
+.list-pets__item {
+  @include media-hover {
+    &:hover {
+      cursor: pointer;
+      box-shadow: $box-shadow-pets-item;
+    }
+  }
+
+  &:nth-child(7),
+  &:nth-child(8) {
+    @include media-tablet {
+      display: none;
+    }
+  }
+
+  &:nth-child(4),
+  &:nth-child(5),
+  &:nth-child(6) {
+    @include media-tablet-midle {
+      display: none;
+    }
+  }
 }
 
 .pagination {
   display: flex;
   column-gap: 1.25rem;
+
+  @include media-tablet-midle {
+    column-gap: 0.625rem;
+  }
 }
 
 .pagination__prev-prev,
@@ -30,12 +81,12 @@
   height: 3.25rem;
 }
 
-.main-pets .button-prev-prev,
-.main-pets .button-prev,
-.main-pets .button-next,
-.main-pets .button-next-next {
-  border: 0.125rem solid $color-main-pets-pagination-border;
-}
+// .main-pets .button-prev-prev,
+// .main-pets .button-prev,
+// .main-pets .button-next,
+// .main-pets .button-next-next {
+//   border: 0.125rem solid $color-main-pets-pagination-border;
+// }
 
 .view-page {
   background: $color-main-pets-pagination-view-background;
