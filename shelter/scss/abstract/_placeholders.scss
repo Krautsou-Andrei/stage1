@@ -6,6 +6,14 @@
   background: url(noise_lines_transparent@2X.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513d2f 0%, #1a1a1c 100%), #211f20;
 }
 
+%background-popup {
+  background: rgba(41, 41, 41, 0.6);
+}
+
+%popup-box-shadow {
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+
 %transition-all {
   transition: all 0.3s;
 }

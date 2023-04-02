@@ -1,0 +1,204 @@
+.popup[open] {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  padding: 1rem;
+
+  z-index: 15;
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @extend %background-popup;
+  overflow: hidden;
+  overflow-y: scroll;
+
+  @include media-tablet-midle-pets {
+    padding: 0.5rem;
+  }
+}
+.popup__wrapper {
+  position: relative;
+
+  padding-top: 3.25rem;
+  padding-right: 3.25rem;
+  margin-left: 3.25rem;
+
+  max-width: 59.5rem;
+  max-height: 34.5rem;
+  width: 100%;
+  height: 100%;
+
+  @include media-tablet {
+    max-width: 42.625rem;
+    max-height: 25.125rem;
+  }
+
+  @include media-tablet-midle-pets {
+    padding-right: 1.9375rem;
+    margin-left: 1.9375rem;
+
+    max-width: 16.9375rem;
+    max-height: 24.5625rem;
+
+    opacity: 0.41;
+  }
+}
+
+.popup__button {
+  position: absolute;
+  top: 0;
+  right: 0.625rem;
+
+  width: 3.25rem;
+  height: 3.25rem;
+
+  @include media-tablet-midle-pets {
+    right: 0;
+  }
+}
+
+.popup__card {
+}
+
+.card {
+  border-radius: 0.5625rem;
+
+  padding-right: 1.25rem;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  column-gap: 1.8125rem;
+
+  overflow: hidden;
+
+  background: $color-popup-background;
+  @extend %popup-box-shadow;
+
+  @include media-tablet {
+    padding-right: 0.4375rem;
+    column-gap: 0.625rem;
+    align-items: flex-start;
+  }
+}
+.card__image .image-source {
+  max-width: 21.875rem;
+  min-height: 21.875rem;
+
+  @include media-tablet-midle-pets {
+    display: none;
+  }
+}
+.image-source {
+}
+.card__content {
+  max-width: 21.9375rem;
+  color: $color-popup-content-text;
+
+  @include media-tablet {
+    padding-top: 0.625rem;
+    max-width: 16.5rem;
+  }
+}
+.content-card {
+}
+.content-card__title {
+  color: $color-popup-content-text;
+  margin-bottom: 0.625rem;
+
+  @include media-tablet-midle-pets {
+    text-align: center;
+  }
+}
+.title--xl {
+}
+.content-card__sub-title {
+  display: block;
+  margin-bottom: 2.5rem;
+
+  @include font($size: 1.25rem, $height: 115%, $weight: 400, $letter: 0.06em);
+
+  @include media-tablet {
+    margin-bottom: 1.25rem;
+  }
+
+  @include media-tablet-midle-pets {
+    text-align: center;
+  }
+}
+.content-card__description {
+  margin-bottom: 2.5rem;
+
+  @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
+
+  @include media-tablet {
+    margin-bottom: 1.25rem;
+    font-size: 0.8125rem;
+  }
+}
+.content-card__info {
+}
+.info-pets li + li {
+  margin-top: 0.625rem;
+
+  @include media-tablet {
+    margin-top: 0.3125rem;
+  }
+}
+
+.info-pets li {
+  position: relative;
+  padding-left: 0.875rem;
+  @include media-tablet {
+    line-height: 110%;
+  }
+}
+
+.info-pets li::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 100%;
+
+  transform: translateY(-50%);
+
+  background-color: $color-popup-marker-background;
+}
+
+.info-pets-title {
+  font-family: "georgiabold";
+  font-weight: 700;
+}
+
+.info-pets__age {
+}
+.age-insert {
+}
+.info-pets__inoculations {
+}
+.inoculations-insert {
+}
+.info-pets__diseases {
+}
+.diseases-insert {
+}
+.info-pets__parasites {
+}
+.parasites-insert {
+}
