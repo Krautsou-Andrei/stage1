@@ -4,6 +4,7 @@ const SELECTORS_MENU_BURGER = {
   BUTTON: "[data-menu-burger-button]",
   MENU: "[data-menu-burger]",
   MENU_BURGER_CONTENT: "[data-menu-burger-content]",
+  MENU_LIST: "[data-menu-list]",
   FOCUSABLE_ELEMENTS: "[data-menu-burger-link]",
 };
 
@@ -11,26 +12,19 @@ export default class MenuBurger {
   constructor(domNode) {
     this.element = domNode;
     this.button = this.element.querySelector(SELECTORS_MENU_BURGER.BUTTON);
+    this.focusableEls = this.element.querySelectorAll(SELECTORS_MENU_BURGER.FOCUSABLE_ELEMENTS);
     this.menuBurgerContent = this.element.querySelector(SELECTORS_MENU_BURGER.MENU_BURGER_CONTENT);
-
+    this.menuList = this.element.querySelector(SELECTORS_MENU_BURGER.MENU_LIST);
     this.open = this.button.getAttribute("aria-expanded") === "true";
 
     this._listeners = new Listeners();
     this._listeners.add(this.button, "click", this.onButtonClick.bind(this));
-    this._listeners.add(this.menuBurgerContent, "click", this.menuPressMouseDown.bind(this));
+    this._listeners.add(this.menuBurgerContent, "click", this.onClickOther.bind(this));
 
-    this.focusableEls = this.element.querySelectorAll(SELECTORS_MENU_BURGER.FOCUSABLE_ELEMENTS);
     this.firstFocusableEl = this.button;
     this.lastFocusableEl = this.focusableEls[this.focusableEls.length - 1];
-
     this.focusableEls.forEach((link) => this._listeners.add(link, "click", this.onCloseMenu.bind(this)));
 
-    let obg = {
-      0: 1,
-      0: 2,
-    };
-
-    console.log("zxcz", obg["0"] + obg[0]);
     this.KEYCODE_TAB = 9;
     this.KEYCODE_ESCAPE = 27;
     this.trapFocus();
@@ -64,18 +58,32 @@ export default class MenuBurger {
     this._listeners.add(this.element, "keydown", this.pressKey.bind(this));
   }
 
-  menuPressMouseDown() {
-    this.firstFocusableEl.focus();
-  }
-
   toggle(open) {
     if (open === this.open) {
       return;
     }
 
+    const body = document.getElementsByTagName("body");
+
+    if (open) {
+      Array.from(body).forEach((element) => {
+        element.style.overflowY = "hidden";
+      });
+    } else {
+      Array.from(body).forEach((element) => {
+        element.style.overflowY = "visible";
+      });
+    }
+
     this.open = open;
 
     this.button.setAttribute("aria-expanded", `${open}`);
+  }
+
+  onClickOther(event) {
+    if (!this.button.contains(event.target) && !this.menuList.contains(event.target)) {
+      this.onCloseMenu();
+    }
   }
 
   pressKey(event) {

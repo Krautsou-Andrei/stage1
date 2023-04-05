@@ -77,7 +77,7 @@
   background: $color-burger-menu-button;
 }
 
-.header-pets .button-burger span {
+.header-pets .button-burger[aria-expanded="false"] span {
   background: $color-burger-menu-nutton-our-pets;
 }
 

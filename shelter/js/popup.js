@@ -1,11 +1,3 @@
-import Listeners from "./listeners.js";
-
-const SELECTORS_POPUP = {
-  POPUP: "[data-popup]",
-  BUTTON_CLOSE: "[data-popup-close]",
-  BUTTON_OPEN: "[data-popup-open]",
-};
-
 export default class Popup {
   constructor(name, id, image, type, breed, description, age, inoculations, diseases, parasites) {
     this.name = name;
@@ -18,32 +10,13 @@ export default class Popup {
     this.inoculations = inoculations;
     this.diseases = diseases;
     this.parasites = parasites;
-
-    // this.toHTML();
-
-    // this.element = node;
-    // this.buttonClose = this.element.querySelector(SELECTORS_POPUP.BUTTON_CLOSE);
-
-    // this._listeners = new Listeners();
-    // this._listeners.add(this.buttonClose, "click", this.onButtonClick.bind(this));
   }
-
-  // onButtonClick(event) {
-
-  //   event.stopPropagation();
-  //   this.element.removeAttribute("open");
-  //   console.log("this", this.element.removeAttribute("open"), this.element);
-  // }
-
-  // open() {
-  //   this.element.setAttribute("open", true);
-  // }
 
   toHTML() {
     return `<dialog class="popup"  open data-popup>
               <div class="popup__wrapper">
                 <div class="popup__button">
-                  <button class="button button-popup" type="button" onclick="window.closePopup()" data-popup-close aria-label="close button"></button>
+                  <button class="button button-popup" type="button" onclick="window.closePopup()" aria-label="close button"></button>
                 </div>
                 <div class="popup__card card">
                   <div class="card__image">

@@ -1,19 +1,15 @@
 import MenuBurger from "./burger-menu.js";
-import Popup from "./popup.js";
 import Slider from "./sider.js";
+import { utilPopup } from "./utils.js";
 
 const SELECTORS = {
   MENU: "[data-menu-burger]",
   CARD: "[data-item-card]",
-  POPUP: "[data-popup]",
-
   SLIDER: "[data-slider]",
-  INSERT_POPUP: "[data-insert-popup]",
 };
 
 const menuBurger = document.querySelector(SELECTORS.MENU);
 const slider = document.querySelector(SELECTORS.SLIDER);
-const insertPopup = document.querySelector(SELECTORS.INSERT_POPUP);
 
 new MenuBurger(menuBurger);
 
@@ -33,30 +29,24 @@ const renderSlider = (arrayCards) => {
   ];
   sliderSite = new Slider(slider, arrayCards, breakpoint, 3);
   dataCards = [...arrayCards];
-};
-
-window.viewPopup = function (event) {
-  const id = parseInt(event.currentTarget.id.match(/\d+/));
-
-  dataCards.forEach((card) => {
-    if (+card.id === id) {
-      const popup = new Popup(card.name, card.id, card.image, card.type, card.breed, card.description, card.age, card.inoculations, card.diseases, card.parasites);
-      insertPopup.insertAdjacentHTML("beforeend", popup.toHTML());
-    }
-  });
-};
-
-window.closePopup = function () {
-  const popup = document.querySelector(SELECTORS.POPUP);
-  insertPopup.removeChild(popup);
+  utilPopup(dataCards);
 };
 
 (async () => {
-  let bd = await (await fetch("./js/data-cards.json")).json();
-  renderSlider(bd);
+  let data = [];
+  let response = await fetch("./js/data-cards.json");
+  if (response.status === 200) {
+    data = await response.json();
+    renderSlider(data);
+  } else {
+    let response = await fetch("../js/data-cards.json");
+    data = await response.json();
+    console.log(data);
+  }
 })();
 
 const windowSize = () => {
+  console.log(window.screen.width);
   if (window.screen.width > 1200) {
     sliderSite.changeScreen(3);
   }

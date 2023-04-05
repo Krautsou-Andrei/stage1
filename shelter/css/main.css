@@ -842,7 +842,7 @@ legend {
   background: #f1cdb3;
 }
 
-.header-pets .button-burger span {
+.header-pets .button-burger[aria-expanded=false] span {
   background: #000000;
 }
 
@@ -1646,15 +1646,15 @@ legend {
   color: #545454;
 }
 
-.header-pets .menu__link:hover:not(.menu__link.current) {
+.header-pets .header__menu .menu__link:hover:not(.menu__link.current) {
   color: #292929;
 }
 
-.header-pets .menu__link:hover + .link-border {
+.header-pets .header__menu .menu__link:hover + .link-border {
   color: #f1cdb3;
 }
 
-.header-pets .menu__link.current {
+.header-pets .header__menu .menu__link.current {
   color: #292929;
 }
 
