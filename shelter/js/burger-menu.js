@@ -23,6 +23,14 @@ export default class MenuBurger {
     this.firstFocusableEl = this.button;
     this.lastFocusableEl = this.focusableEls[this.focusableEls.length - 1];
 
+    this.focusableEls.forEach((link) => this._listeners.add(link, "click", this.onCloseMenu.bind(this)));
+
+    let obg = {
+      0: 1,
+      0: 2,
+    };
+
+    console.log("zxcz", obg["0"] + obg[0]);
     this.KEYCODE_TAB = 9;
     this.KEYCODE_ESCAPE = 27;
     this.trapFocus();

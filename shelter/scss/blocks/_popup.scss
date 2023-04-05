@@ -92,9 +92,12 @@
     align-items: flex-start;
   }
 }
+
 .card__image .image-source {
-  max-width: 21.875rem;
-  min-height: 21.875rem;
+  @include media-tablet {
+    max-width: 21.875rem;
+    min-height: 21.875rem;
+  }
 
   @include media-tablet-midle-pets {
     display: none;

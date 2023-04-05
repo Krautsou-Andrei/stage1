@@ -64,4 +64,12 @@
   position: fixed;
   top: 3.125rem;
   right: 1.875rem;
+
+  @include media-tablet-midle {
+    right: 0.625rem;
+  }
+
+  @include media-mobile {
+    right: 1.25rem;
+  }
 }

@@ -12,6 +12,7 @@
 </head>
 
 <body>
+
   <header class="header">
     <div class="header__container wrapper">
       <div class="header__wrapper">
@@ -83,34 +84,11 @@
       </section>
     </div>
   </header>
-  <main class="main">
+  <main class="main" data-insert-popup>
     <div class="main__wrapper">
-      <dialog class="popup" data-popup>
-        <div class="popup__wrapper">
-          <div class="popup__button">
-            <button class="button button-popup" type="button" data-popup-close aria-label="close button"></button>
-          </div>
-          <div class="popup__card card">
-            <div class="card__image">
-              <img class="image-source" src="./assets/image/pets-jennifer.jpg" alt="image popup" width="500" height="500">
-            </div>
-            <div class="card__content content-card">
-              <h3 class="content-card__title title--popup">Jennifer</h3>
-              <span class="content-card__sub-title">Dog - Labrador</span>
-              <div class="content-card__description">Jennifer is a sweet 2 months old Labrador that is patiently waiting to find a new forever home. This girl really enjoys being able to go outside to run and play, but won't hesitate to play up a
-                storm in the house if she has all of her favorite toys.</div>
-              <ul class="content-card__info info-pets">
-                <li class="info-pets__age"><span class="info-pets-title">Age: </span><span class="age-insert">2</span> months</li>
-                <li class="info-pets__inoculations"><span class="info-pets-title">Inoculations: </span><span class="inoculations-insert">none</span> </li>
-                <li class="info-pets__diseases"><span class="info-pets-title">Diseases: </span><span class="diseases-insert">none</span></li>
-                <li class="info-pets__parasites"><span class="info-pets-title">Parasites: </span><span class="parasites-insert">none</span></li>
-            </div>
-          </div>
-
-        </div>
 
     </div>
-    </dialog>
+
     <section id="about" class="about">
       <div class="about__wrapper wrapper">
         <div class="about__image">
@@ -131,45 +109,16 @@
       <div class="pets__wrapper wrapper">
         <h2 class="pets__title title--xl">Our friends who <br />
           are looking for a house</h2>
-        <div class="slider-wrapper">
+        <div class="slider-wrapper" data-slider>
+          <div class="slider" data-slider-cadrs>
 
-          <div class="slider">
-            <div class="slider__item item">
-              <div class="item__slider-image">
-                <img class="image-sourse" src="./assets/image/pets-katrine.jpg" alt="pets katrine" width="270" height="270">
-              </div>
-
-              <h3 class="item__title title--lg">Katrine</h3>
-              <div class="item__button">
-                <button class="button button-item-pets" type="button">Learn more</button>
-              </div>
-            </div>
-
-            <div class="slider__item item">
-              <div class="item__slider-image">
-                <img class="image-sourse" src="./assets/image/pets-jennifer.jpg" alt="pets jennifer" width="270" height="270">
-              </div>
-              <h3 class="item__title title--lg">Jennifer</h3>
-              <div class="item__button">
-                <button class="button button-item-pets" type="button">Learn more</button>
-              </div>
-            </div>
-            <div class="slider__item item">
-              <div class="item__slider-image">
-                <img class="image-sourse" src="./assets/image/pets-woody.jpg" alt="pets woody" width="270" height="270">
-              </div>
-              <h3 class="item__title title--lg">Woody</h3>
-              <div class="item__button">
-                <button class="button button-item-pets" type="button">Learn more</button>
-              </div>
-            </div>
           </div>
           <div class="button-slider-wrapper">
             <div class=" button__slider prev">
-              <button class="button button-prev" type="button" aria-label="button prev"></button>
+              <button class="button button-prev" type="button" data-slider-prev aria-label="button prev"></button>
             </div>
             <div class="button__slider next">
-              <button class="button button-next" type="button" aria-label="button next"></button>
+              <button class="button button-next" type="button" data-slider-next aria-label="button next"></button>
             </div>
           </div>
         </div>
