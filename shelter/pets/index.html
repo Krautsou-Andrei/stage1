@@ -67,103 +67,32 @@
 
     </div>
   </header>
-  <main class="main main-pets" id="help">
+  <main class="main main-pets" id="help" data-insert-popup>
     <div class="main-pets__wrapper wrapper">
       <h2 class="main-pets__title main__title title--xl">Our friends who <br />
         are looking for a house</h2>
-      <ul class="main-pets__list list-pets">
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-katrine.jpg" alt="pets katrine" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Katrine</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-jennifer.jpg" alt="pets jennifer" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Jennifer</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-woody.jpg" alt="pets woody" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Woody</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-sophia.jpg" alt="petssophia" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Sophia</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-timmy.jpg" alt="petstimmy" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Timmy</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-charly.jpg" alt="pets charly" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Charly</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-scarlet.jpg" alt="pets scarlet" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Scarlet</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
-        <li class="list-pets__item item">
-          <div class="item__slider-image">
-            <img class="image-sourse" src="../assets/image/pets-freddie.jpg" alt="pets freddie" width="270" height="270">
-          </div>
-          <h3 class="item__title title--lg">Freddie</h3>
-          <div class="item__button">
-            <button class="button button-item-pets" type="button">Learn more</button>
-          </div>
-        </li>
+      <ul class="main-pets__list slider" data-pagination-page>
+
 
       </ul>
-      <div class="main-buttons-wrapper">
+      <div class="main-buttons-wrapper" data-pagination-buttons>
         <div class="main__pagination pagination">
           <div class="pagination__prev-prev">
-            <button class="button button-prev-prev" type="button" aria-label="button return start" disabled></button>
+            <button class="button button-prev-prev" type="button" aria-label="button return start" data-pagination-button-prev-prev disabled="true"></button>
           </div>
           <div class="pagination__prev">
-            <button class="button button-prev" type="button" aria-label="button prev" disabled></button>
+            <button class="button button-prev" type="button" aria-label="button prev" data-pagination-button-prev disabled="true"></button>
           </div>
           <div class="pagination__view-page">
-            <div class="button view-page">
-              <div>1</div>
+            <div class="button view-page" data-pagination-view>
+              1
             </div>
           </div>
           <div class="pagination__next">
-            <button class="button button-next" type="button" aria-label="button next"></button>
+            <button class="button button-next" type="button" aria-label="button next" data-pagination-button-next></button>
           </div>
           <div class="pagination__next-next">
-            <button class="button button-next-next" type="button" aria-label="button return end"></button>
+            <button class="button button-next-next" type="button" aria-label="button return end" data-pagination-button-next-next></button>
           </div>
         </div>
       </div>

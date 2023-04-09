@@ -13,12 +13,12 @@ export default class Popup {
   }
 
   toHTML() {
-    return `<dialog class="popup"  open data-popup>
+    return `<dialog class="popup"  open  data-popup >
               <div class="popup__wrapper">
                 <div class="popup__button">
-                  <button class="button button-popup" type="button" onclick="window.closePopup()" aria-label="close button"></button>
+                  <button class="button button-popup" type="button"  aria-label="close button" data-popup-button-close></button>
                 </div>
-                <div class="popup__card card">
+                <div class="popup__card card" data-popup-card>
                   <div class="card__image">
                     <img class="image-source" src=${this.image ? this.image : ""} alt="image popup" width="500" height="500">
                   </div>

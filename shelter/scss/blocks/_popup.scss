@@ -33,13 +33,13 @@
   margin-left: 3.25rem;
 
   max-width: 59.5rem;
-  max-height: 34.5rem;
+  min-height: 34.5rem;
   width: 100%;
-  height: 100%;
+  // height: 100%;
 
   @include media-tablet {
     max-width: 42.625rem;
-    max-height: 25.125rem;
+    min-height: 25.125rem;
   }
 
   @include media-tablet-midle-pets {
@@ -47,9 +47,7 @@
     margin-left: 1.9375rem;
 
     max-width: 16.9375rem;
-    max-height: 24.5625rem;
-
-    opacity: 0.41;
+    min-height: 24.5625rem;
   }
 }
 
@@ -96,7 +94,8 @@
 .card__image .image-source {
   @include media-tablet {
     max-width: 21.875rem;
-    min-height: 21.875rem;
+    min-height: 22.125rem;
+    height: 100%;
   }
 
   @include media-tablet-midle-pets {
@@ -112,6 +111,7 @@
   @include media-tablet {
     padding-top: 0.625rem;
     max-width: 16.5rem;
+    width: 100%;
   }
 }
 .content-card {
@@ -146,7 +146,7 @@
   @include font($size: 0.9375rem, $height: 110%, $weight: 400, $letter: 0.06em);
 
   @include media-tablet {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.125rem;
     font-size: 0.8125rem;
   }
 }
@@ -186,7 +186,7 @@
 
 .info-pets-title {
   font-family: "georgiabold";
-  font-weight: 700;
+  @include font($size: 0.9375rem, $height: 110%, $weight: 700, $letter: 0.06em);
 }
 
 .info-pets__age {
@@ -204,4 +204,7 @@
 .info-pets__parasites {
 }
 .parasites-insert {
+}
+.card__image {
+  height: 100%;
 }

@@ -23,7 +23,8 @@
   text-align: center;
 }
 
-.list-pets {
+.main-pets .slider {
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -36,30 +37,6 @@
 
   @include media-tablet-midle {
     margin-bottom: 0;
-  }
-}
-
-.list-pets__item {
-  @include media-hover {
-    &:hover {
-      cursor: pointer;
-      box-shadow: $box-shadow-pets-item;
-    }
-  }
-
-  &:nth-child(7),
-  &:nth-child(8) {
-    @include media-tablet {
-      display: none;
-    }
-  }
-
-  &:nth-child(4),
-  &:nth-child(5),
-  &:nth-child(6) {
-    @include media-tablet-midle {
-      display: none;
-    }
   }
 }
 
@@ -80,13 +57,6 @@
   width: 3.25rem;
   height: 3.25rem;
 }
-
-// .main-pets .button-prev-prev,
-// .main-pets .button-prev,
-// .main-pets .button-next,
-// .main-pets .button-next-next {
-//   border: 0.125rem solid $color-main-pets-pagination-border;
-// }
 
 .view-page {
   background: $color-main-pets-pagination-view-background;
