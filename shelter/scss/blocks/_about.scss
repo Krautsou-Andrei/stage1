@@ -4,9 +4,9 @@
 
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  column-gap: 6.8125rem;
-  align-items: flex-start;
+  column-gap: 7.8125rem;
 
   @include media-laptop-midle {
     row-gap: 5rem;
@@ -20,7 +20,9 @@
 .about__content {
   max-width: 26.875rem;
   display: flex;
+
   flex-direction: column;
+
   row-gap: 1.5625rem;
 
   @include media-tablet {

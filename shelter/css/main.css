@@ -495,14 +495,13 @@ legend {
   padding-right: 3.25rem;
   margin-left: 3.25rem;
   max-width: 59.5rem;
-  max-height: 34.5rem;
+  min-height: 34.5rem;
   width: 100%;
-  height: 100%;
 }
 @media (max-width: 48rem) {
   .popup__wrapper {
     max-width: 42.625rem;
-    max-height: 25.125rem;
+    min-height: 25.125rem;
   }
 }
 @media (max-width: 46.875rem) {
@@ -510,8 +509,7 @@ legend {
     padding-right: 1.9375rem;
     margin-left: 1.9375rem;
     max-width: 16.9375rem;
-    max-height: 24.5625rem;
-    opacity: 0.41;
+    min-height: 24.5625rem;
   }
 }
 
@@ -560,7 +558,8 @@ legend {
 @media (max-width: 48rem) {
   .card__image .image-source {
     max-width: 21.875rem;
-    min-height: 21.875rem;
+    min-height: 22.125rem;
+    height: 100%;
   }
 }
 @media (max-width: 46.875rem) {
@@ -577,6 +576,7 @@ legend {
   .card__content {
     padding-top: 0.625rem;
     max-width: 16.5rem;
+    width: 100%;
   }
 }
 
@@ -620,7 +620,7 @@ legend {
 }
 @media (max-width: 48rem) {
   .content-card__description {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.125rem;
     font-size: 0.8125rem;
   }
 }
@@ -660,7 +660,15 @@ legend {
 
 .info-pets-title {
   font-family: "georgiabold";
+  font-size: 0.9375rem;
+  font-style: normal;
   font-weight: 700;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+}
+
+.card__image {
+  height: 100%;
 }
 
 .header__container {
@@ -999,14 +1007,14 @@ legend {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-column-gap: 6.8125rem;
-     -moz-column-gap: 6.8125rem;
-          column-gap: 6.8125rem;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-column-gap: 7.8125rem;
+     -moz-column-gap: 7.8125rem;
+          column-gap: 7.8125rem;
 }
 @media (max-width: 67.5rem) {
   .about__wrapper {
@@ -1692,7 +1700,8 @@ legend {
   text-align: center;
 }
 
-.list-pets {
+.main-pets .slider {
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1707,31 +1716,13 @@ legend {
   row-gap: 1.875rem;
 }
 @media (max-width: 48rem) {
-  .list-pets {
+  .main-pets .slider {
     margin-bottom: 0.625rem;
   }
 }
 @media (max-width: 25rem) {
-  .list-pets {
+  .main-pets .slider {
     margin-bottom: 0;
-  }
-}
-
-@media (hover: hover) {
-  .list-pets__item:hover {
-    cursor: pointer;
-    -webkit-box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-            box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
-  }
-}
-@media (max-width: 48rem) {
-  .list-pets__item:nth-child(7), .list-pets__item:nth-child(8) {
-    display: none;
-  }
-}
-@media (max-width: 25rem) {
-  .list-pets__item:nth-child(4), .list-pets__item:nth-child(5), .list-pets__item:nth-child(6) {
-    display: none;
   }
 }
 

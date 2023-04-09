@@ -1,5 +1,6 @@
 import MenuBurger from "./burger-menu.js";
 import Slider from "./sider.js";
+import Pagination from "./pagination.js";
 import { utilPopup } from "./utils.js";
 
 const SELECTORS = {
@@ -13,8 +14,9 @@ const slider = document.querySelector(SELECTORS.SLIDER);
 
 new MenuBurger(menuBurger);
 
-let dataCards = [];
-let sliderSite = [];
+let dataCards = {};
+let sliderSite = {};
+let paginationPage = {};
 
 const renderSlider = (arrayCards) => {
   const breakpoint = [
@@ -32,6 +34,20 @@ const renderSlider = (arrayCards) => {
   utilPopup(dataCards);
 };
 
+const renderPagination = (arrayCards) => {
+  arrayCards.forEach((card) => {
+    card.image = `.${card.image}`;
+  });
+
+  let arrayPagination = [];
+  for (let i = 0; i < 6; i++) {
+    arrayPagination = [...arrayPagination, ...arrayCards];
+  }
+
+  paginationPage = new Pagination(arrayPagination);
+  utilPopup(arrayCards);
+};
+
 (async () => {
   let data = [];
   let response = await fetch("./js/data-cards.json");
@@ -41,22 +57,37 @@ const renderSlider = (arrayCards) => {
   } else {
     let response = await fetch("../js/data-cards.json");
     data = await response.json();
-    console.log(data);
+    renderPagination(data);
   }
 })();
 
 const windowSize = () => {
-  console.log(window.screen.width);
-  if (window.screen.width > 1200) {
-    sliderSite.changeScreen(3);
+  if (!!Object.keys(sliderSite).length) {
+    if (window.screen.width >= 1200) {
+      sliderSite.changeScreen(3);
+    }
+
+    if (window.screen.width < 1200 && window.screen.width >= 750) {
+      sliderSite.changeScreen(2);
+    }
+
+    if (window.screen.width < 750) {
+      sliderSite.changeScreen(1);
+    }
   }
 
-  if (window.screen.width < 1200 && window.screen.width >= 750) {
-    sliderSite.changeScreen(2);
-  }
+  if (!!Object.keys(paginationPage).length) {
+    if (window.screen.width >= 1280) {
+      paginationPage.changeScreen(8);
+    }
 
-  if (window.screen.width < 750) {
-    sliderSite.changeScreen(1);
+    if (window.screen.width < 1280 && window.screen.width >= 750) {
+      paginationPage.changeScreen(6);
+    }
+
+    if (window.screen.width < 750) {
+      paginationPage.changeScreen(4);
+    }
   }
 };
 
