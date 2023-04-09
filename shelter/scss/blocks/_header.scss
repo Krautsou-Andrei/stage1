@@ -55,23 +55,21 @@
   position: relative;
 }
 
-.menu__link:hover:not(.menu__link.current) {
-  color: $color-menu-link-text-hover;
-  @extend %transition-all;
-}
-
-.menu__link.current + .link-border,
-.menu__link:active + .link-border {
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 0.1875rem;
-
-  background-color: $color-menu-link-border;
-  @extend %transition-all;
-}
-
 .header__burger-menu {
   width: 1.875rem;
   height: 1.375rem;
+}
+
+.header__burger-menu:has(.button-burger[aria-expanded="true"]) {
+  position: fixed;
+  top: 3.125rem;
+  right: 1.875rem;
+
+  @include media-tablet-midle {
+    right: 0.625rem;
+  }
+
+  @include media-mobile {
+    right: 1.25rem;
+  }
 }

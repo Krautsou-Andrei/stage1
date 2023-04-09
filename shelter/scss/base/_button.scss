@@ -151,3 +151,12 @@
     background-image: url("../assets/icon/arrow-disabled.svg");
   }
 }
+
+.button-popup {
+  border: 0.125rem solid $color-button-border;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 0.75rem, 0.75rem;
+  background-image: url("../assets/icon/close.svg");
+}

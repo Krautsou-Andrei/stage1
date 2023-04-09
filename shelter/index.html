@@ -7,10 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/icon/favicon.svg" type="image/x-icon">
   <link rel="stylesheet" href="./css/main.css">
+  <script type="module" src="./js/index.js"></script>
   <title>Shelter</title>
 </head>
 
 <body>
+
   <header class="header">
     <div class="header__container wrapper">
       <div class="header__wrapper">
@@ -36,25 +38,25 @@
             </ul>
           </div>
         </nav>
-        <div class="header__burger-menu">
-          <button class="burger-menu__button button-burger" type="button">
+        <div class="header__burger-menu" data-menu-burger>
+          <button class="burger-menu__button button-burger" type="button" aria-expanded="false" aria-label="button burger" data-menu-burger-button>
             <span></span>
             <span></span>
             <span></span>
           </button>
-          <nav class="burger-menu__menu">
-            <div class="burger-menu">
-              <ul class="burger-menu__list">
-                <li class="burger-menu__item"><a class="burger-menu__link current" href="javascript:void">About the shelter</a>
+          <nav class="burger-menu__menu" data-menu-burger-content>
+            <div class="burger-menu" data-menu-list>
+              <ul class="burger-menu__list ">
+                <li class="burger-menu__item"><a class="menu__link current" href="javascript:void" data-menu-burger-link>About the shelter</a>
                   <span class="link-border"></span>
                 </li>
-                <li class="burger-menu__item"><a class="burger-menu__link" href="./pets/index.html">Our pets</a>
+                <li class="burger-menu__item"><a class="menu__link" href="./pets/index.html" data-menu-burger-link>Our pets</a>
                   <span class="link-border"></span>
                 </li>
-                <li class="burger-menu__item"><a class="burger-menu__link" href="#help">Help the shelter</a>
+                <li class="burger-menu__item"><a class="menu__link" href="#help" data-menu-burger-link>Help the shelter</a>
                   <span class="link-border"></span>
                 </li>
-                <li class="burger-menu__item"><a class="burger-menu__link" href="#contacts">Contacts</a>
+                <li class="burger-menu__item"><a class="menu__link" href="#contacts" data-menu-burger-link>Contacts</a>
                   <span class="link-border"></span>
                 </li>
               </ul>
@@ -82,140 +84,114 @@
       </section>
     </div>
   </header>
-  <main class="main">
+  <main class="main" data-insert-popup>
     <div class="main__wrapper">
-      <section id="about" class="about">
-        <div class="about__wrapper wrapper">
-          <div class="about__image">
-            <img class="image-about" src="./assets/image/about-pets.jpg" alt="about pets" width="300" height="408">
-          </div>
-          <div class="about__content content">
-            <h2 class="content__title title-about title--xl ">About the shelter <br /> “Cozy House”</h2>
-            <p class="content__description description--about">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky
-              chance to become
-              dearly loved.</p>
-            <p class="content__description description--about">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of
-              various skill
-              levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
-          </div>
+
+    </div>
+
+    <section id="about" class="about">
+      <div class="about__wrapper wrapper">
+        <div class="about__image">
+          <img class="image-about" src="./assets/image/about-pets.jpg" alt="about pets" width="300" height="408">
         </div>
-      </section>
-      <section id="pets" class="pets">
-        <div class="pets__wrapper wrapper">
-          <h2 class="pets__title title--xl">Our friends who <br />
-            are looking for a house</h2>
-          <div class="slider-wrapper">
+        <div class="about__content content">
+          <h2 class="content__title title-about title--xl ">About the shelter <br /> “Cozy House”</h2>
+          <p class="content__description description--about">Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky
+            chance to become
+            dearly loved.</p>
+          <p class="content__description description--about">We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of
+            various skill
+            levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
+        </div>
+      </div>
+    </section>
+    <section id="pets" class="pets">
+      <div class="pets__wrapper wrapper">
+        <h2 class="pets__title title--xl">Our friends who <br />
+          are looking for a house</h2>
+        <div class="slider-wrapper" data-slider>
+          <div class="slider" data-slider-cadrs>
 
-            <div class="slider">
-              <div class="slider__item item">
-                <div class="item__slider-image">
-                  <img class="image-sourse" src="./assets/image/pets-katrine.jpg" alt="pets katrine" width="270" height="270">
-                </div>
-
-                <h3 class="item__title title--lg">Katrine</h3>
-                <div class="item__button">
-                  <button class="button button-item-pets" type="button">Learn more</button>
-                </div>
-              </div>
-
-              <div class="slider__item item">
-                <div class="item__slider-image">
-                  <img class="image-sourse" src="./assets/image/pets-jennifer.jpg" alt="pets jennifer" width="270" height="270">
-                </div>
-                <h3 class="item__title title--lg">Jennifer</h3>
-                <div class="item__button">
-                  <button class="button button-item-pets" type="button">Learn more</button>
-                </div>
-              </div>
-              <div class="slider__item item">
-                <div class="item__slider-image">
-                  <img class="image-sourse" src="./assets/image/pets-woody.jpg" alt="pets woody" width="270" height="270">
-                </div>
-                <h3 class="item__title title--lg">Woody</h3>
-                <div class="item__button">
-                  <button class="button button-item-pets" type="button">Learn more</button>
-                </div>
-              </div>
+          </div>
+          <div class="button-slider-wrapper">
+            <div class=" button__slider prev">
+              <button class="button button-prev" type="button" data-slider-prev aria-label="button prev"></button>
             </div>
-            <div class="button-slider-wrapper">
-              <div class=" button__slider prev">
-                <button class="button button-prev" type="button"></button>
-              </div>
-              <div class="button__slider next">
-                <button class="button button-next" type="button"></button>
-              </div>
+            <div class="button__slider next">
+              <button class="button button-next" type="button" data-slider-next aria-label="button next"></button>
             </div>
           </div>
+        </div>
 
-          <div class="pets__button">
-            <a class="button button-pets" href="./pets/index.html">Get to know the rest</a>
-          </div>
+        <div class="pets__button">
+          <a class="button button-pets" href="./pets/index.html">Get to know the rest</a>
         </div>
-      </section>
-      <section id="help" class="help">
-        <div class="help__wrapper wrapper">
-          <h2 class="help__title title--xl">How you can help<br />
-            our shelter</h2>
-          <ul class="help__list list">
-            <li class="list__item item__food">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-pet-food.svg" alt="Pet food" width="60" height="60">
-              <span class="item__text">Pet food</span>
-            </li>
-            <li class="list__item item__transportation">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-transportation.svg" alt="Transportation" width="60" height="60">
-              <span class="item__text">Transportation</span>
-            </li>
-            <li class="list__item item__toys">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-toys.svg" alt="Toys" width="60" height="60">
-              <span class="item__text">Toys</span>
-            </li>
-            <li class="list__item item__cups">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-bowls-and-cups.svg" alt="Bowls and cups" width="60" height="60">
-              <span class="item__text">Bowls and cups</span>
-            </li>
-            <li class="list__item item__shampoos">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-shampoos.svg" alt="Shampoos" width="60" height="60">
-              <span class="item__text">Shampoos</span>
-            </li>
-            <li class="list__item item__vitamins">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-vitamins.svg" alt="Vitamins" width="60" height="60">
-              <span class="item__text">Vitamins</span>
-            </li>
-            <li class="list__item item__medicines">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-medicines.svg" alt="Medicines" width="60" height="60">
-              <span class="item__text">Medicines</span>
-            </li>
-            <li class="list__item item__collars">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-collars-leashes.svg" alt="Collars  leashes" width="60" height="60">
-              <span class="item__text">Collars / leashes</span>
-            </li>
-            <li class="list__item item__sleeping-areas">
-              <img class="image-sourse" src="./assets/icon/icon-help/icon-sleeping-area.svg" alt="Sleeping areas" width="60" height="60">
-              <span class="item__text">Sleeping areas</span>
-            </li>
-          </ul>
+      </div>
+    </section>
+    <section id="help" class="help">
+      <div class="help__wrapper wrapper">
+        <h2 class="help__title title--xl">How you can help<br />
+          our shelter</h2>
+        <ul class="help__list list">
+          <li class="list__item item__food">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-pet-food.svg" alt="Pet food" width="60" height="60">
+            <span class="item__text">Pet food</span>
+          </li>
+          <li class="list__item item__transportation">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-transportation.svg" alt="Transportation" width="60" height="60">
+            <span class="item__text">Transportation</span>
+          </li>
+          <li class="list__item item__toys">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-toys.svg" alt="Toys" width="60" height="60">
+            <span class="item__text">Toys</span>
+          </li>
+          <li class="list__item item__cups">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-bowls-and-cups.svg" alt="Bowls and cups" width="60" height="60">
+            <span class="item__text">Bowls and cups</span>
+          </li>
+          <li class="list__item item__shampoos">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-shampoos.svg" alt="Shampoos" width="60" height="60">
+            <span class="item__text">Shampoos</span>
+          </li>
+          <li class="list__item item__vitamins">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-vitamins.svg" alt="Vitamins" width="60" height="60">
+            <span class="item__text">Vitamins</span>
+          </li>
+          <li class="list__item item__medicines">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-medicines.svg" alt="Medicines" width="60" height="60">
+            <span class="item__text">Medicines</span>
+          </li>
+          <li class="list__item item__collars">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-collars-leashes.svg" alt="Collars  leashes" width="60" height="60">
+            <span class="item__text">Collars / leashes</span>
+          </li>
+          <li class="list__item item__sleeping-areas">
+            <img class="image-sourse" src="./assets/icon/icon-help/icon-sleeping-area.svg" alt="Sleeping areas" width="60" height="60">
+            <span class="item__text">Sleeping areas</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="donation">
+      <div class="donation__wrapper wrapper">
+        <div class="donation__image">
+          <img class="image-sourse" src="./assets/image/donation-dog.png" alt="donation image" width="505" height="261">
         </div>
-      </section>
-      <section class="donation">
-        <div class="donation__wrapper wrapper">
-          <div class="donation__image">
-            <img class="image-sourse" src="./assets/image/donation-dog.png" alt="donation image" width="505" height="261">
-          </div>
-          <div class="donation__content content content-donation">
-            <h2 class="content__title title--xl">You can also <br /> make a donation</h2>
-            <div class="sub-title">Name of the bank / Type of bank account</div>
-            <div class="donation__credit-card credit-card">
-              <div class="credit-card__image">
-                <img class="image-source" src="./assets/icon/credit-card.svg" alt="image credit card">
-              </div>
-              <span class="credit-card__number">8380 2880 8028 8791 7435</span>
+        <div class="donation__content content content-donation">
+          <h2 class="content__title title--xl">You can also <br /> make a donation</h2>
+          <div class="sub-title">Name of the bank / Type of bank account</div>
+          <div class="donation__credit-card credit-card">
+            <div class="credit-card__image">
+              <img class="image-source" src="./assets/icon/credit-card.svg" alt="image credit card">
             </div>
-            <p class="donation__description">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
-              malesuada
-              fames ac ante ipsum primis in faucibus.</p>
+            <span class="credit-card__number">8380 2880 8028 8791 7435</span>
           </div>
+          <p class="donation__description">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
+            malesuada
+            fames ac ante ipsum primis in faucibus.</p>
         </div>
-      </section>
+      </div>
+    </section>
     </div>
   </main>
   <footer id="contacts" class="footer">

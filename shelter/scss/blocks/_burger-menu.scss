@@ -5,23 +5,48 @@
     display: block;
   }
 }
+
 .burger-menu__menu {
-  position: absolute;
-  z-index: 10;
+  position: fixed;
+  z-index: 3;
 
   width: 100%;
-  height: auto;
-  left: 0;
+  height: 100%;
+  top: 0;
+  right: 0;
 
-  transform: translateX(-100%);
+  display: flex;
+  justify-content: end;
+  align-items: center;
+
+  overflow: hidden;
+
+  @extend %background-popup;
+
+  transform: translateX(100%);
+  @extend %transition-all;
 }
 
-.burger-menu__menu[aria-expanded="true"] {
-  // transform: translateX(0);
+.burger-menu__menu.active {
+  transform: translateX(0);
+}
+
+.burger-menu {
+  max-width: 20rem;
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: $color-burger-menu-background;
 }
 
 .button-burger {
   position: relative;
+
+  z-index: 4;
 
   width: 100%;
   height: 100%;
@@ -29,6 +54,13 @@
   display: flex;
   justify-content: center;
   align-self: center;
+
+  cursor: pointer;
+  @extend %transition-all;
+}
+
+.button-burger[aria-expanded="true"] {
+  transform: rotate(-90deg);
 }
 
 .button-burger span {
@@ -45,7 +77,7 @@
   background: $color-burger-menu-button;
 }
 
-.header-pets .button-burger span {
+.header-pets .button-burger[aria-expanded="false"] span {
   background: $color-burger-menu-nutton-our-pets;
 }
 
@@ -55,4 +87,16 @@
 
 .button-burger span:nth-of-type(3) {
   top: calc(50% - 0.625rem);
+}
+
+.burger-menu__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2.5rem;
+}
+
+.burger-menu__item {
+  position: relative;
 }

@@ -1,0 +1,26 @@
+.burger-menu .menu__link {
+  font-family: "Arial";
+  color: $color-burger-menu-link-text;
+
+  @include font($size: 2rem, $height: 160%, $weight: 400, $letter: normal);
+}
+
+.menu__link.current {
+  color: $color-menu-link-text-hover;
+}
+
+.menu__link:hover:not(.menu__link.current) {
+  color: $color-menu-link-text-hover;
+  @extend %transition-all;
+}
+
+.menu__link.current + .link-border,
+.menu__link:active + .link-border {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 0.1875rem;
+
+  background-color: $color-menu-link-border;
+  @extend %transition-all;
+}

@@ -29,9 +29,16 @@
   justify-content: center;
   column-gap: 5.625rem;
 
+  overflow: hidden;
+
   @include media-laptop-midle {
     column-gap: 2.5rem;
   }
+}
+
+.slider.next {
+  width: 0;
+  @extend %transition-all;
 }
 
 .slider__item {
@@ -42,17 +49,17 @@
     }
   }
 
-  &:last-child {
-    @include media-laptop-midle-pets {
-      display: none;
-    }
-  }
+  // &:last-child {
+  //   @include media-laptop-midle-pets {
+  //     display: none;
+  //   }
+  // }
 
-  &:nth-child(2) {
-    @include media-tablet-midle-pets {
-      display: none;
-    }
-  }
+  // &:nth-child(2) {
+  //   @include media-tablet-midle-pets {
+  //     display: none;
+  //   }
+  // }
 }
 
 .button-slider-wrapper {
@@ -96,12 +103,17 @@
 
 .item {
   padding-bottom: 1.875rem;
+
+  width: 16/875rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 1.875rem;
 
   border-radius: 0.5625rem;
+
+  overflow: hidden;
 
   background-color: $color-pets-item-background;
 }
