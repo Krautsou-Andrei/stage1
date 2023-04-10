@@ -135,7 +135,6 @@ fieldset {
   padding: 0;
   margin: 0;
   border: none;
-  /* border-color: transparent; */
 }
 
 .address {
@@ -516,19 +515,6 @@ legend {
     margin-left: 1.9375rem;
     max-width: 16.9375rem;
     min-height: 24.5625rem;
-  }
-}
-
-.popup__button {
-  position: absolute;
-  top: 0;
-  right: 0.625rem;
-  width: 3.25rem;
-  height: 3.25rem;
-}
-@media (max-width: 46.875rem) {
-  .popup__button {
-    right: 0;
   }
 }
 
