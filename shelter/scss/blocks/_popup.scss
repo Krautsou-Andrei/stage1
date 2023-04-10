@@ -51,6 +51,19 @@
   }
 }
 
+.popup__button {
+  position: absolute;
+  top: 0;
+  right: 0.625rem;
+  width: 3.25rem;
+  height: 3.25rem;
+}
+@media (max-width: 46.875rem) {
+  .popup__button {
+    right: 0;
+  }
+}
+
 .card {
   border-radius: 0.5625rem;
 
