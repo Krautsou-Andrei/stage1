@@ -15,12 +15,14 @@
   color: $color-header-pets-menu-link;
 }
 
-.header-pets .header__menu .menu__link:hover:not(.menu__link.current) {
-  color: $color-header-pets-menu-link-hover;
-}
+@include media-hover {
+  .header-pets .header__menu .menu__link:hover:not(.menu__link.current) {
+    color: $color-header-pets-menu-link-hover;
+  }
 
-.header-pets .header__menu .menu__link:hover + .link-border {
-  color: $color-header-pets-menu-link-border;
+  .header-pets .header__menu .menu__link:hover + .link-border {
+    color: $color-header-pets-menu-link-border;
+  }
 }
 
 .header-pets .header__menu .menu__link.current {

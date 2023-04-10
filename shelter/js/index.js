@@ -35,6 +35,16 @@ const renderSlider = (arrayCards) => {
 };
 
 const renderPagination = (arrayCards) => {
+  const breakpoint = [
+    {
+      width: 750,
+      cards: 4,
+    },
+    {
+      width: 1279,
+      cards: 6,
+    },
+  ];
   arrayCards.forEach((card) => {
     card.image = `.${card.image}`;
   });
@@ -44,7 +54,7 @@ const renderPagination = (arrayCards) => {
     arrayPagination = [...arrayPagination, ...arrayCards];
   }
 
-  paginationPage = new Pagination(arrayPagination);
+  paginationPage = new Pagination(arrayPagination, breakpoint);
   utilPopup(arrayCards);
 };
 
@@ -81,7 +91,7 @@ const windowSize = () => {
       paginationPage.changeScreen(8);
     }
 
-    if (window.screen.width < 1280 && window.screen.width >= 750) {
+    if (window.screen.width < 1279 && window.screen.width >= 750) {
       paginationPage.changeScreen(6);
     }
 

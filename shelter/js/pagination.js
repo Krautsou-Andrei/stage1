@@ -12,7 +12,8 @@ const SELECTORS = {
 };
 
 export default class Pagination {
-  constructor(arrayPagination) {
+  constructor(arrayPagination, breakpoint) {
+    this.breakpoint = breakpoint;
     this.arrayPagination = arrayPagination;
     this.page = document.querySelector(SELECTORS.PAGINATION_PAGE);
     this.buttons = document.querySelector(SELECTORS.PAGINATION_BUTTONS);
@@ -37,7 +38,27 @@ export default class Pagination {
     this.arrayRandomNumber = [];
 
     this.shuffleArray();
-    this.viewPage(this.viewNumberCards);
+    this.setNumberCards();
+  }
+
+  setNumberCards() {
+    if (this.breakpoint?.length > 0) {
+      let count = 0;
+
+      this.breakpoint.some((point, index) => {
+        if (window.screen.width < point.width) {
+          count++;
+          this.viewNumberCards = point.cards;
+
+          this.viewPage(point.cards);
+          return true;
+        }
+      });
+
+      if (count === 0) {
+        this.viewPage();
+      }
+    }
   }
 
   getRandomNumber() {
@@ -82,9 +103,10 @@ export default class Pagination {
   }
 
   viewPage(number) {
+    let numberCard = number ? number : this.maxViewCards;
     this.arrayPage = [];
 
-    for (let i = number * (this.countPages - 1); i < number * this.countPages; i++) {
+    for (let i = numberCard * (this.countPages - 1); i < numberCard * this.countPages; i++) {
       this.arrayPage.push(this.arrayPagination[i]);
     }
 
@@ -147,15 +169,20 @@ export default class Pagination {
     if (this.page.childNodes.length > number) {
       const quantityDelete = this.page.childNodes.length - number;
       this.viewNumberCards = this.viewNumberCards - quantityDelete;
-      this.countPages = this.arrayPagination.length / this.viewNumberCards;
-      this.viewPage(this.viewNumberCards);
+      if (this.countPages > this.arrayPagination.length / this.viewNumberCards) {
+        this.countPages = this.arrayPagination.length / this.viewNumberCards;
+      }
+      this.disabledButtonPrev();
     }
 
     if (this.page.childNodes.length < number) {
       const quantitySum = number - this.page.childNodes.length;
       this.viewNumberCards = this.viewNumberCards + quantitySum;
-      this.countPages = this.arrayPagination.length / this.viewNumberCards;
-      this.viewPage(this.viewNumberCards);
+      if (this.countPages > this.arrayPagination.length / this.viewNumberCards) {
+        this.countPages = this.arrayPagination.length / this.viewNumberCards;
+      }
+
+      this.disabledButtonNext();
     }
   }
 }
