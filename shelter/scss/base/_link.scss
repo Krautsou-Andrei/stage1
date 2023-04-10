@@ -9,9 +9,11 @@
   color: $color-menu-link-text-hover;
 }
 
-.menu__link:hover:not(.menu__link.current) {
-  color: $color-menu-link-text-hover;
-  @extend %transition-all;
+@include media-hover {
+  .menu__link:hover:not(.menu__link.current) {
+    color: $color-menu-link-text-hover;
+    transition: all 0.3;
+  }
 }
 
 .menu__link.current + .link-border,
