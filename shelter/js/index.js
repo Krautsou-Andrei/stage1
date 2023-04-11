@@ -38,7 +38,7 @@ const renderPagination = (arrayCards) => {
   const breakpoint = [
     {
       width: 750,
-      cards: 4,
+      cards: 3,
     },
     {
       width: 1279,
@@ -96,7 +96,7 @@ const windowSize = () => {
     }
 
     if (window.screen.width < 750) {
-      paginationPage.changeScreen(4);
+      paginationPage.changeScreen(3);
     }
   }
 };
